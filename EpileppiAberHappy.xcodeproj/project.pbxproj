@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F76FCB6D1E4FE83C00A014F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76FCB6C1E4FE83C00A014F0 /* AppDelegate.swift */; };
+		F76FCB6F1E4FE83C00A014F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76FCB6E1E4FE83C00A014F0 /* ViewController.swift */; };
+		F76FCB721E4FE83C00A014F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76FCB701E4FE83C00A014F0 /* Main.storyboard */; };
+		F76FCB741E4FE83C00A014F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76FCB731E4FE83C00A014F0 /* Assets.xcassets */; };
+		F76FCB771E4FE83C00A014F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76FCB751E4FE83C00A014F0 /* LaunchScreen.storyboard */; };
+		F76FCB821E4FE83C00A014F0 /* EpileppiAberHappyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76FCB811E4FE83C00A014F0 /* EpileppiAberHappyTests.swift */; };
+		F76FCB8D1E4FE83C00A014F0 /* EpileppiAberHappyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76FCB8C1E4FE83C00A014F0 /* EpileppiAberHappyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F76FCB7E1E4FE83C00A014F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F76FCB611E4FE83C00A014F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F76FCB681E4FE83C00A014F0;
+			remoteInfo = EpileppiAberHappy;
+		};
+		F76FCB891E4FE83C00A014F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F76FCB611E4FE83C00A014F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F76FCB681E4FE83C00A014F0;
+			remoteInfo = EpileppiAberHappy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F76FCB691E4FE83C00A014F0 /* EpileppiAberHappy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EpileppiAberHappy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76FCB6C1E4FE83C00A014F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F76FCB6E1E4FE83C00A014F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F76FCB711E4FE83C00A014F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F76FCB731E4FE83C00A014F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F76FCB761E4FE83C00A014F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F76FCB781E4FE83C00A014F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F76FCB7D1E4FE83C00A014F0 /* EpileppiAberHappyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EpileppiAberHappyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76FCB811E4FE83C00A014F0 /* EpileppiAberHappyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpileppiAberHappyTests.swift; sourceTree = "<group>"; };
+		F76FCB831E4FE83C00A014F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F76FCB881E4FE83C00A014F0 /* EpileppiAberHappyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EpileppiAberHappyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76FCB8C1E4FE83C00A014F0 /* EpileppiAberHappyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpileppiAberHappyUITests.swift; sourceTree = "<group>"; };
+		F76FCB8E1E4FE83C00A014F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F76FCB661E4FE83C00A014F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76FCB7A1E4FE83C00A014F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76FCB851E4FE83C00A014F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F76FCB601E4FE83C00A014F0 = {
+			isa = PBXGroup;
+			children = (
+				F76FCB6B1E4FE83C00A014F0 /* EpileppiAberHappy */,
+				F76FCB801E4FE83C00A014F0 /* EpileppiAberHappyTests */,
+				F76FCB8B1E4FE83C00A014F0 /* EpileppiAberHappyUITests */,
+				F76FCB6A1E4FE83C00A014F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F76FCB6A1E4FE83C00A014F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F76FCB691E4FE83C00A014F0 /* EpileppiAberHappy.app */,
+				F76FCB7D1E4FE83C00A014F0 /* EpileppiAberHappyTests.xctest */,
+				F76FCB881E4FE83C00A014F0 /* EpileppiAberHappyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F76FCB6B1E4FE83C00A014F0 /* EpileppiAberHappy */ = {
+			isa = PBXGroup;
+			children = (
+				F76FCB6C1E4FE83C00A014F0 /* AppDelegate.swift */,
+				F76FCB6E1E4FE83C00A014F0 /* ViewController.swift */,
+				F76FCB701E4FE83C00A014F0 /* Main.storyboard */,
+				F76FCB731E4FE83C00A014F0 /* Assets.xcassets */,
+				F76FCB751E4FE83C00A014F0 /* LaunchScreen.storyboard */,
+				F76FCB781E4FE83C00A014F0 /* Info.plist */,
+			);
+			path = EpileppiAberHappy;
+			sourceTree = "<group>";
+		};
+		F76FCB801E4FE83C00A014F0 /* EpileppiAberHappyTests */ = {
+			isa = PBXGroup;
+			children = (
+				F76FCB811E4FE83C00A014F0 /* EpileppiAberHappyTests.swift */,
+				F76FCB831E4FE83C00A014F0 /* Info.plist */,
+			);
+			path = EpileppiAberHappyTests;
+			sourceTree = "<group>";
+		};
+		F76FCB8B1E4FE83C00A014F0 /* EpileppiAberHappyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F76FCB8C1E4FE83C00A014F0 /* EpileppiAberHappyUITests.swift */,
+				F76FCB8E1E4FE83C00A014F0 /* Info.plist */,
+			);
+			path = EpileppiAberHappyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F76FCB681E4FE83C00A014F0 /* EpileppiAberHappy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F76FCB911E4FE83C00A014F0 /* Build configuration list for PBXNativeTarget "EpileppiAberHappy" */;
+			buildPhases = (
+				F76FCB651E4FE83C00A014F0 /* Sources */,
+				F76FCB661E4FE83C00A014F0 /* Frameworks */,
+				F76FCB671E4FE83C00A014F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EpileppiAberHappy;
+			productName = EpileppiAberHappy;
+			productReference = F76FCB691E4FE83C00A014F0 /* EpileppiAberHappy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F76FCB7C1E4FE83C00A014F0 /* EpileppiAberHappyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F76FCB941E4FE83C00A014F0 /* Build configuration list for PBXNativeTarget "EpileppiAberHappyTests" */;
+			buildPhases = (
+				F76FCB791E4FE83C00A014F0 /* Sources */,
+				F76FCB7A1E4FE83C00A014F0 /* Frameworks */,
+				F76FCB7B1E4FE83C00A014F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F76FCB7F1E4FE83C00A014F0 /* PBXTargetDependency */,
+			);
+			name = EpileppiAberHappyTests;
+			productName = EpileppiAberHappyTests;
+			productReference = F76FCB7D1E4FE83C00A014F0 /* EpileppiAberHappyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F76FCB871E4FE83C00A014F0 /* EpileppiAberHappyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F76FCB971E4FE83C00A014F0 /* Build configuration list for PBXNativeTarget "EpileppiAberHappyUITests" */;
+			buildPhases = (
+				F76FCB841E4FE83C00A014F0 /* Sources */,
+				F76FCB851E4FE83C00A014F0 /* Frameworks */,
+				F76FCB861E4FE83C00A014F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F76FCB8A1E4FE83C00A014F0 /* PBXTargetDependency */,
+			);
+			name = EpileppiAberHappyUITests;
+			productName = EpileppiAberHappyUITests;
+			productReference = F76FCB881E4FE83C00A014F0 /* EpileppiAberHappyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F76FCB611E4FE83C00A014F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Johannes Velde";
+				TargetAttributes = {
+					F76FCB681E4FE83C00A014F0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = V8G4U4EP2K;
+						ProvisioningStyle = Automatic;
+					};
+					F76FCB7C1E4FE83C00A014F0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = V8G4U4EP2K;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F76FCB681E4FE83C00A014F0;
+					};
+					F76FCB871E4FE83C00A014F0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = V8G4U4EP2K;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F76FCB681E4FE83C00A014F0;
+					};
+				};
+			};
+			buildConfigurationList = F76FCB641E4FE83C00A014F0 /* Build configuration list for PBXProject "EpileppiAberHappy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F76FCB601E4FE83C00A014F0;
+			productRefGroup = F76FCB6A1E4FE83C00A014F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F76FCB681E4FE83C00A014F0 /* EpileppiAberHappy */,
+				F76FCB7C1E4FE83C00A014F0 /* EpileppiAberHappyTests */,
+				F76FCB871E4FE83C00A014F0 /* EpileppiAberHappyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F76FCB671E4FE83C00A014F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76FCB771E4FE83C00A014F0 /* LaunchScreen.storyboard in Resources */,
+				F76FCB741E4FE83C00A014F0 /* Assets.xcassets in Resources */,
+				F76FCB721E4FE83C00A014F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76FCB7B1E4FE83C00A014F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76FCB861E4FE83C00A014F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F76FCB651E4FE83C00A014F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76FCB6F1E4FE83C00A014F0 /* ViewController.swift in Sources */,
+				F76FCB6D1E4FE83C00A014F0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76FCB791E4FE83C00A014F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76FCB821E4FE83C00A014F0 /* EpileppiAberHappyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76FCB841E4FE83C00A014F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76FCB8D1E4FE83C00A014F0 /* EpileppiAberHappyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F76FCB7F1E4FE83C00A014F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F76FCB681E4FE83C00A014F0 /* EpileppiAberHappy */;
+			targetProxy = F76FCB7E1E4FE83C00A014F0 /* PBXContainerItemProxy */;
+		};
+		F76FCB8A1E4FE83C00A014F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F76FCB681E4FE83C00A014F0 /* EpileppiAberHappy */;
+			targetProxy = F76FCB891E4FE83C00A014F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F76FCB701E4FE83C00A014F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F76FCB711E4FE83C00A014F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F76FCB751E4FE83C00A014F0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F76FCB761E4FE83C00A014F0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F76FCB8F1E4FE83C00A014F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F76FCB901E4FE83C00A014F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F76FCB921E4FE83C00A014F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V8G4U4EP2K;
+				INFOPLIST_FILE = EpileppiAberHappy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jo.EpileppiAberHappy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F76FCB931E4FE83C00A014F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V8G4U4EP2K;
+				INFOPLIST_FILE = EpileppiAberHappy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jo.EpileppiAberHappy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F76FCB951E4FE83C00A014F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V8G4U4EP2K;
+				INFOPLIST_FILE = EpileppiAberHappyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jo.EpileppiAberHappyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EpileppiAberHappy.app/EpileppiAberHappy";
+			};
+			name = Debug;
+		};
+		F76FCB961E4FE83C00A014F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V8G4U4EP2K;
+				INFOPLIST_FILE = EpileppiAberHappyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jo.EpileppiAberHappyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EpileppiAberHappy.app/EpileppiAberHappy";
+			};
+			name = Release;
+		};
+		F76FCB981E4FE83C00A014F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = V8G4U4EP2K;
+				INFOPLIST_FILE = EpileppiAberHappyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jo.EpileppiAberHappyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = EpileppiAberHappy;
+			};
+			name = Debug;
+		};
+		F76FCB991E4FE83C00A014F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = V8G4U4EP2K;
+				INFOPLIST_FILE = EpileppiAberHappyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jo.EpileppiAberHappyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = EpileppiAberHappy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F76FCB641E4FE83C00A014F0 /* Build configuration list for PBXProject "EpileppiAberHappy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76FCB8F1E4FE83C00A014F0 /* Debug */,
+				F76FCB901E4FE83C00A014F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F76FCB911E4FE83C00A014F0 /* Build configuration list for PBXNativeTarget "EpileppiAberHappy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76FCB921E4FE83C00A014F0 /* Debug */,
+				F76FCB931E4FE83C00A014F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F76FCB941E4FE83C00A014F0 /* Build configuration list for PBXNativeTarget "EpileppiAberHappyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76FCB951E4FE83C00A014F0 /* Debug */,
+				F76FCB961E4FE83C00A014F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F76FCB971E4FE83C00A014F0 /* Build configuration list for PBXNativeTarget "EpileppiAberHappyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76FCB981E4FE83C00A014F0 /* Debug */,
+				F76FCB991E4FE83C00A014F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F76FCB611E4FE83C00A014F0 /* Project object */;
+}
