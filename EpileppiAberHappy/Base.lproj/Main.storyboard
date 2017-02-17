@@ -1,26 +1,744 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gKM-7H-42n">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Question View Controller-->
+        <scene sceneID="1c8-Pk-Rbr">
+            <objects>
+                <viewController id="966-vg-9kC" customClass="QuestionViewController" customModule="EpileppiAberHappy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mmf-1e-BEc"/>
+                        <viewControllerLayoutGuide type="bottom" id="nZD-zO-duT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zxf-hK-OYB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qR9-6B-ziL">
+                                <rect key="frame" x="8" y="25" width="305" height="535"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="QVN-0D-DkC">
+                                        <rect key="frame" x="0.0" y="0.0" width="95" height="535"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ri-jQ-cBe">
+                                                <rect key="frame" x="0.0" y="0.0" width="95" height="95"/>
+                                                <color key="backgroundColor" red="0.19574597477912903" green="0.29238271713256836" blue="0.98658996820449829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="439-Ef-i1u">
+                                                <rect key="frame" x="0.0" y="110" width="95" height="95"/>
+                                                <color key="backgroundColor" red="0.19574597477912903" green="0.29238271713256836" blue="0.98658996820449829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vuy-5X-KOX">
+                                                <rect key="frame" x="0.0" y="220" width="95" height="95"/>
+                                                <color key="backgroundColor" red="0.19574597477912903" green="0.29238271713256836" blue="0.98658996820449829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aOB-E2-HKq">
+                                                <rect key="frame" x="0.0" y="330" width="95" height="95"/>
+                                                <color key="backgroundColor" red="0.19574597477912903" green="0.29238271713256836" blue="0.98658996820449829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="68n-ar-UPU">
+                                                <rect key="frame" x="0.0" y="440" width="95" height="95"/>
+                                                <color key="backgroundColor" red="0.19574597477912903" green="0.29238271713256836" blue="0.98658996820449829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="439-Ef-i1u" firstAttribute="top" secondItem="QVN-0D-DkC" secondAttribute="top" constant="110" id="10x-0a-zOb"/>
+                                            <constraint firstItem="Vuy-5X-KOX" firstAttribute="top" secondItem="QVN-0D-DkC" secondAttribute="top" constant="220" id="1Xp-jh-FcA"/>
+                                            <constraint firstItem="Vuy-5X-KOX" firstAttribute="centerY" secondItem="QVN-0D-DkC" secondAttribute="centerY" id="JJc-rw-6Ta"/>
+                                            <constraint firstItem="68n-ar-UPU" firstAttribute="top" secondItem="QVN-0D-DkC" secondAttribute="top" constant="440" id="K8C-Uh-5rJ"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="lVV-mF-8pH">
+                                        <rect key="frame" x="105" y="0.0" width="95" height="535"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ySw-EP-9de">
+                                                <rect key="frame" x="0.0" y="0.0" width="95" height="95"/>
+                                                <color key="backgroundColor" red="0.19574597477912903" green="0.29238271713256836" blue="0.98658996820449829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VzA-U7-9hu">
+                                                <rect key="frame" x="0.0" y="110" width="95" height="95"/>
+                                                <color key="backgroundColor" red="0.19574597477912903" green="0.29238271713256836" blue="0.98658996820449829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yGy-E0-JPO">
+                                                <rect key="frame" x="0.0" y="220" width="95" height="95"/>
+                                                <color key="backgroundColor" red="0.19574597477912903" green="0.29238271713256836" blue="0.98658996820449829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BXU-xM-f7e">
+                                                <rect key="frame" x="0.0" y="330" width="95" height="95"/>
+                                                <color key="backgroundColor" red="0.19574597477912903" green="0.29238271713256836" blue="0.98658996820449829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0gO-la-bEE">
+                                                <rect key="frame" x="0.0" y="440" width="95" height="95"/>
+                                                <color key="backgroundColor" red="0.19574597477912903" green="0.29238271713256836" blue="0.98658996820449829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="yGy-E0-JPO" firstAttribute="top" secondItem="lVV-mF-8pH" secondAttribute="top" constant="220" id="ABP-u5-Rmd"/>
+                                            <constraint firstItem="yGy-E0-JPO" firstAttribute="centerY" secondItem="lVV-mF-8pH" secondAttribute="centerY" id="oBd-pv-fBD"/>
+                                            <constraint firstItem="VzA-U7-9hu" firstAttribute="top" secondItem="lVV-mF-8pH" secondAttribute="top" constant="110" id="ocF-Xh-2BR"/>
+                                            <constraint firstItem="0gO-la-bEE" firstAttribute="top" secondItem="lVV-mF-8pH" secondAttribute="top" constant="440" id="qV2-7h-yh8"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hN6-dl-1mz">
+                                        <rect key="frame" x="210" y="0.0" width="95" height="535"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jtl-dQ-3E6">
+                                                <rect key="frame" x="0.0" y="0.0" width="95" height="95"/>
+                                                <color key="backgroundColor" red="0.19617223739624023" green="0.293498694896698" blue="0.98658972978591919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ANu-FG-RyB">
+                                                <rect key="frame" x="0.0" y="110" width="95" height="95"/>
+                                                <color key="backgroundColor" red="0.19617223739624023" green="0.293498694896698" blue="0.98658972978591919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JDB-7h-uuc">
+                                                <rect key="frame" x="0.0" y="220" width="95" height="95"/>
+                                                <color key="backgroundColor" red="0.19617223739624023" green="0.293498694896698" blue="0.98658972978591919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X6S-22-pnW">
+                                                <rect key="frame" x="0.0" y="330" width="95" height="95"/>
+                                                <color key="backgroundColor" red="0.19617223739624023" green="0.293498694896698" blue="0.98658972978591919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KtY-oT-NJp">
+                                                <rect key="frame" x="0.0" y="440" width="95" height="95"/>
+                                                <color key="backgroundColor" red="0.19617223739624023" green="0.293498694896698" blue="0.98658972978591919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="KtY-oT-NJp" firstAttribute="top" secondItem="hN6-dl-1mz" secondAttribute="top" constant="440" id="6Ys-Y5-X3Y"/>
+                                            <constraint firstItem="JDB-7h-uuc" firstAttribute="top" secondItem="hN6-dl-1mz" secondAttribute="top" constant="220" id="A6m-Wl-TOk"/>
+                                            <constraint firstItem="JDB-7h-uuc" firstAttribute="centerY" secondItem="hN6-dl-1mz" secondAttribute="centerY" id="V8C-Kh-MAv"/>
+                                            <constraint firstItem="ANu-FG-RyB" firstAttribute="top" secondItem="hN6-dl-1mz" secondAttribute="top" constant="110" id="ZcG-aR-HMi"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="lVV-mF-8pH" firstAttribute="leading" secondItem="qR9-6B-ziL" secondAttribute="leading" constant="105" id="Qab-a6-c2g"/>
+                                    <constraint firstItem="lVV-mF-8pH" firstAttribute="centerX" secondItem="qR9-6B-ziL" secondAttribute="centerX" id="bGx-RR-ws8"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3G-0y-Ygv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="966-vg-9kC" eventType="touchUpInside" id="X7N-Ma-LOJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1957459748" green="0.29238271710000002" blue="0.9865899682" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="qR9-6B-ziL" firstAttribute="leading" secondItem="Zxf-hK-OYB" secondAttribute="leadingMargin" constant="-8" id="AiT-KE-3fD"/>
+                            <constraint firstItem="nZD-zO-duT" firstAttribute="top" secondItem="qR9-6B-ziL" secondAttribute="bottom" constant="8" symbolic="YES" id="L2r-c2-BUS"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="D3G-0y-Ygv" secondAttribute="leading" constant="16" id="Obq-xC-NJm"/>
+                            <constraint firstItem="nZD-zO-duT" firstAttribute="top" secondItem="D3G-0y-Ygv" secondAttribute="bottom" id="SQt-cc-SJI"/>
+                            <constraint firstItem="qR9-6B-ziL" firstAttribute="top" secondItem="mmf-1e-BEc" secondAttribute="bottom" constant="5" id="Wd0-kG-F7r"/>
+                            <constraint firstItem="qR9-6B-ziL" firstAttribute="centerX" secondItem="Zxf-hK-OYB" secondAttribute="centerX" id="bCF-cx-qEo"/>
+                            <constraint firstItem="D3G-0y-Ygv" firstAttribute="top" secondItem="mmf-1e-BEc" secondAttribute="bottom" constant="-20" id="d3H-sl-BcS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D3G-0y-Ygv" secondAttribute="trailing" constant="-16" id="gdN-FX-WjH"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="F9a-bn-FV0" appends="YES" id="5oW-Sd-EbI"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="A1" destination="8Ri-jQ-cBe" id="7aI-XH-27o"/>
+                        <outlet property="A2" destination="439-Ef-i1u" id="1zu-rl-aFp"/>
+                        <outlet property="A3" destination="Vuy-5X-KOX" id="OzS-Va-9be"/>
+                        <outlet property="A4" destination="aOB-E2-HKq" id="Moh-eT-bHG"/>
+                        <outlet property="A5" destination="68n-ar-UPU" id="nfq-Wc-gud"/>
+                        <outlet property="B1" destination="ySw-EP-9de" id="RN0-7l-sBC"/>
+                        <outlet property="B2" destination="VzA-U7-9hu" id="y17-iQ-M7k"/>
+                        <outlet property="B3" destination="yGy-E0-JPO" id="Fke-b6-8lL"/>
+                        <outlet property="B4" destination="BXU-xM-f7e" id="RPH-1p-3IF"/>
+                        <outlet property="B5" destination="0gO-la-bEE" id="HwQ-D7-HbN"/>
+                        <outlet property="C1" destination="Jtl-dQ-3E6" id="RUw-p3-6It"/>
+                        <outlet property="C2" destination="ANu-FG-RyB" id="PzC-dK-cCP"/>
+                        <outlet property="C3" destination="JDB-7h-uuc" id="xb6-GI-caE"/>
+                        <outlet property="C4" destination="X6S-22-pnW" id="hP3-mH-Vfz"/>
+                        <outlet property="C5" destination="KtY-oT-NJp" id="AaP-R9-0zZ"/>
+                        <outlet property="button" destination="D3G-0y-Ygv" id="lDN-6H-wXq"/>
+                        <outlet property="viewGreat" destination="Zxf-hK-OYB" id="eZE-Fv-UwP"/>
+                        <outletCollection property="null" destination="Vuy-5X-KOX" collectionClass="NSMutableArray" id="23c-9g-iuo"/>
+                        <outletCollection property="null" destination="aOB-E2-HKq" collectionClass="NSMutableArray" id="3v3-L4-qtO"/>
+                        <outletCollection property="null" destination="68n-ar-UPU" collectionClass="NSMutableArray" id="tiP-A4-JaM"/>
+                        <outletCollection property="null" destination="439-Ef-i1u" collectionClass="NSMutableArray" id="i4c-Vm-7t7"/>
+                        <outletCollection property="null" destination="8Ri-jQ-cBe" collectionClass="NSMutableArray" id="jbu-hX-ddE"/>
+                        <outletCollection property="null" destination="ySw-EP-9de" collectionClass="NSMutableArray" id="5vs-Bi-n5G"/>
+                        <outletCollection property="null" destination="Jtl-dQ-3E6" collectionClass="NSMutableArray" id="kzd-wQ-TNY"/>
+                        <outletCollection property="null" destination="ANu-FG-RyB" collectionClass="NSMutableArray" id="1fl-jW-brJ"/>
+                        <outletCollection property="null" destination="JDB-7h-uuc" collectionClass="NSMutableArray" id="URH-Tc-cUw"/>
+                        <outletCollection property="null" destination="X6S-22-pnW" collectionClass="NSMutableArray" id="dtL-K7-8HG"/>
+                        <outletCollection property="null" destination="KtY-oT-NJp" collectionClass="NSMutableArray" id="9Ws-uX-Amj"/>
+                        <outletCollection property="null" destination="0gO-la-bEE" collectionClass="NSMutableArray" id="Yc4-Xa-4ld"/>
+                        <outletCollection property="eins" destination="Jtl-dQ-3E6" collectionClass="NSMutableArray" id="Tzy-QW-isb"/>
+                        <outletCollection property="eins" destination="ANu-FG-RyB" collectionClass="NSMutableArray" id="ioD-8G-DgM"/>
+                        <outletCollection property="eins" destination="JDB-7h-uuc" collectionClass="NSMutableArray" id="Lo4-mU-T2S"/>
+                        <outletCollection property="eins" destination="X6S-22-pnW" collectionClass="NSMutableArray" id="MsY-6c-49I"/>
+                        <outletCollection property="eins" destination="KtY-oT-NJp" collectionClass="NSMutableArray" id="aGB-2w-HXh"/>
+                        <outletCollection property="zwei" destination="8Ri-jQ-cBe" collectionClass="NSMutableArray" id="8RX-po-Vte"/>
+                        <outletCollection property="zwei" destination="Jtl-dQ-3E6" collectionClass="NSMutableArray" id="GZq-cr-Ziz"/>
+                        <outletCollection property="zwei" destination="ySw-EP-9de" collectionClass="NSMutableArray" id="Jki-dn-BIK"/>
+                        <outletCollection property="zwei" destination="aOB-E2-HKq" collectionClass="NSMutableArray" id="fgs-wt-Zt5"/>
+                        <outletCollection property="zwei" destination="68n-ar-UPU" collectionClass="NSMutableArray" id="RXG-uU-SMO"/>
+                        <outletCollection property="zwei" destination="yGy-E0-JPO" collectionClass="NSMutableArray" id="cqi-2d-82P"/>
+                        <outletCollection property="zwei" destination="0gO-la-bEE" collectionClass="NSMutableArray" id="goL-nJ-1Eb"/>
+                        <outletCollection property="zwei" destination="ANu-FG-RyB" collectionClass="NSMutableArray" id="6mV-Ae-V7G"/>
+                        <outletCollection property="zwei" destination="KtY-oT-NJp" collectionClass="NSMutableArray" id="hae-jZ-Lfk"/>
+                        <outletCollection property="drei" destination="8Ri-jQ-cBe" collectionClass="NSMutableArray" id="6tm-FA-jQE"/>
+                        <outletCollection property="drei" destination="Vuy-5X-KOX" collectionClass="NSMutableArray" id="ODc-fe-c6h"/>
+                        <outletCollection property="drei" destination="68n-ar-UPU" collectionClass="NSMutableArray" id="F9V-py-SUK"/>
+                        <outletCollection property="drei" destination="ySw-EP-9de" collectionClass="NSMutableArray" id="DwX-pS-hpK"/>
+                        <outletCollection property="drei" destination="yGy-E0-JPO" collectionClass="NSMutableArray" id="bnt-5y-SW2"/>
+                        <outletCollection property="drei" destination="0gO-la-bEE" collectionClass="NSMutableArray" id="tvg-1Q-XE3"/>
+                        <outletCollection property="drei" destination="Jtl-dQ-3E6" collectionClass="NSMutableArray" id="Qf6-kr-wBk"/>
+                        <outletCollection property="drei" destination="ANu-FG-RyB" collectionClass="NSMutableArray" id="NEg-J2-PHu"/>
+                        <outletCollection property="drei" destination="JDB-7h-uuc" collectionClass="NSMutableArray" id="A6M-CU-NjJ"/>
+                        <outletCollection property="drei" destination="X6S-22-pnW" collectionClass="NSMutableArray" id="1zK-nf-tcl"/>
+                        <outletCollection property="drei" destination="KtY-oT-NJp" collectionClass="NSMutableArray" id="vNf-GK-PoX"/>
+                        <outletCollection property="vier" destination="8Ri-jQ-cBe" collectionClass="NSMutableArray" id="ApE-Gd-kst"/>
+                        <outletCollection property="vier" destination="439-Ef-i1u" collectionClass="NSMutableArray" id="Ct1-gO-2Ta"/>
+                        <outletCollection property="vier" destination="Vuy-5X-KOX" collectionClass="NSMutableArray" id="HBF-wM-hCI"/>
+                        <outletCollection property="vier" destination="yGy-E0-JPO" collectionClass="NSMutableArray" id="sHC-gX-14y"/>
+                        <outletCollection property="vier" destination="Jtl-dQ-3E6" collectionClass="NSMutableArray" id="b08-3V-ix1"/>
+                        <outletCollection property="vier" destination="ANu-FG-RyB" collectionClass="NSMutableArray" id="Tik-Dx-9DK"/>
+                        <outletCollection property="vier" destination="JDB-7h-uuc" collectionClass="NSMutableArray" id="HXs-kT-KLr"/>
+                        <outletCollection property="vier" destination="X6S-22-pnW" collectionClass="NSMutableArray" id="jUC-F2-cIm"/>
+                        <outletCollection property="vier" destination="KtY-oT-NJp" collectionClass="NSMutableArray" id="EsR-A6-Lfu"/>
+                        <outletCollection property="fuenf" destination="8Ri-jQ-cBe" collectionClass="NSMutableArray" id="mbD-Ts-UNl"/>
+                        <outletCollection property="fuenf" destination="439-Ef-i1u" collectionClass="NSMutableArray" id="L8G-lz-1ra"/>
+                        <outletCollection property="fuenf" destination="Vuy-5X-KOX" collectionClass="NSMutableArray" id="pMx-1n-8VG"/>
+                        <outletCollection property="fuenf" destination="ySw-EP-9de" collectionClass="NSMutableArray" id="XVa-RU-TaJ"/>
+                        <outletCollection property="fuenf" destination="yGy-E0-JPO" collectionClass="NSMutableArray" id="Z18-Ow-QHx"/>
+                        <outletCollection property="fuenf" destination="0gO-la-bEE" collectionClass="NSMutableArray" id="qL2-gA-aVW"/>
+                        <outletCollection property="fuenf" destination="Jtl-dQ-3E6" collectionClass="NSMutableArray" id="Nlh-SV-MVb"/>
+                        <outletCollection property="fuenf" destination="JDB-7h-uuc" collectionClass="NSMutableArray" id="KkB-pg-jXH"/>
+                        <outletCollection property="fuenf" destination="KtY-oT-NJp" collectionClass="NSMutableArray" id="Dns-xO-TZY"/>
+                        <outletCollection property="fuenf" destination="68n-ar-UPU" collectionClass="NSMutableArray" id="PpR-wW-esr"/>
+                        <outletCollection property="fuenf" destination="X6S-22-pnW" collectionClass="NSMutableArray" id="npq-hr-Cn4"/>
+                        <outletCollection property="sechs" destination="8Ri-jQ-cBe" collectionClass="NSMutableArray" id="g07-n0-cYo"/>
+                        <outletCollection property="sechs" destination="439-Ef-i1u" collectionClass="NSMutableArray" id="8fo-H1-7fj"/>
+                        <outletCollection property="sechs" destination="Vuy-5X-KOX" collectionClass="NSMutableArray" id="gDc-5L-I4V"/>
+                        <outletCollection property="sechs" destination="aOB-E2-HKq" collectionClass="NSMutableArray" id="phf-PA-wGB"/>
+                        <outletCollection property="sechs" destination="68n-ar-UPU" collectionClass="NSMutableArray" id="8rH-Kd-34G"/>
+                        <outletCollection property="sechs" destination="ySw-EP-9de" collectionClass="NSMutableArray" id="FiX-4h-aGB"/>
+                        <outletCollection property="sechs" destination="yGy-E0-JPO" collectionClass="NSMutableArray" id="EqF-KX-nFN"/>
+                        <outletCollection property="sechs" destination="0gO-la-bEE" collectionClass="NSMutableArray" id="zik-bS-2P9"/>
+                        <outletCollection property="sechs" destination="Jtl-dQ-3E6" collectionClass="NSMutableArray" id="yGd-22-0Sb"/>
+                        <outletCollection property="sechs" destination="JDB-7h-uuc" collectionClass="NSMutableArray" id="Ahm-bW-5q2"/>
+                        <outletCollection property="sechs" destination="X6S-22-pnW" collectionClass="NSMutableArray" id="9Gw-hF-2fB"/>
+                        <outletCollection property="sechs" destination="KtY-oT-NJp" collectionClass="NSMutableArray" id="27N-bI-hMn"/>
+                        <outletCollection property="sieben" destination="8Ri-jQ-cBe" collectionClass="NSMutableArray" id="v7h-y2-wFY"/>
+                        <outletCollection property="sieben" destination="ySw-EP-9de" collectionClass="NSMutableArray" id="fEZ-RF-ggd"/>
+                        <outletCollection property="sieben" destination="Jtl-dQ-3E6" collectionClass="NSMutableArray" id="HnT-mF-UBT"/>
+                        <outletCollection property="sieben" destination="ANu-FG-RyB" collectionClass="NSMutableArray" id="g94-3L-Et9"/>
+                        <outletCollection property="sieben" destination="JDB-7h-uuc" collectionClass="NSMutableArray" id="qOx-ne-iV1"/>
+                        <outletCollection property="sieben" destination="X6S-22-pnW" collectionClass="NSMutableArray" id="o6j-MH-epv"/>
+                        <outletCollection property="sieben" destination="KtY-oT-NJp" collectionClass="NSMutableArray" id="VBW-Hs-V4q"/>
+                        <outletCollection property="acht" destination="8Ri-jQ-cBe" collectionClass="NSMutableArray" id="suq-u4-hS0"/>
+                        <outletCollection property="acht" destination="439-Ef-i1u" collectionClass="NSMutableArray" id="0JY-UN-WuC"/>
+                        <outletCollection property="acht" destination="Vuy-5X-KOX" collectionClass="NSMutableArray" id="LmP-5T-BPo"/>
+                        <outletCollection property="acht" destination="aOB-E2-HKq" collectionClass="NSMutableArray" id="2Cf-8V-ZtI"/>
+                        <outletCollection property="acht" destination="68n-ar-UPU" collectionClass="NSMutableArray" id="UgU-pW-wg4"/>
+                        <outletCollection property="acht" destination="ySw-EP-9de" collectionClass="NSMutableArray" id="Iew-dC-zcn"/>
+                        <outletCollection property="acht" destination="yGy-E0-JPO" collectionClass="NSMutableArray" id="mRT-eT-ohV"/>
+                        <outletCollection property="acht" destination="0gO-la-bEE" collectionClass="NSMutableArray" id="sTf-Hr-uvu"/>
+                        <outletCollection property="acht" destination="Jtl-dQ-3E6" collectionClass="NSMutableArray" id="JLd-6F-hJv"/>
+                        <outletCollection property="acht" destination="ANu-FG-RyB" collectionClass="NSMutableArray" id="myE-4E-jiU"/>
+                        <outletCollection property="acht" destination="JDB-7h-uuc" collectionClass="NSMutableArray" id="pJu-gL-Djj"/>
+                        <outletCollection property="acht" destination="X6S-22-pnW" collectionClass="NSMutableArray" id="IcT-Kf-xqg"/>
+                        <outletCollection property="acht" destination="KtY-oT-NJp" collectionClass="NSMutableArray" id="VoJ-CB-NKQ"/>
+                        <outletCollection property="neun" destination="8Ri-jQ-cBe" collectionClass="NSMutableArray" id="24W-xZ-p5l"/>
+                        <outletCollection property="neun" destination="439-Ef-i1u" collectionClass="NSMutableArray" id="waC-99-nVK"/>
+                        <outletCollection property="neun" destination="Vuy-5X-KOX" collectionClass="NSMutableArray" id="VZv-O5-lqA"/>
+                        <outletCollection property="neun" destination="ySw-EP-9de" collectionClass="NSMutableArray" id="gJe-RA-h93"/>
+                        <outletCollection property="neun" destination="yGy-E0-JPO" collectionClass="NSMutableArray" id="YNG-1p-fkd"/>
+                        <outletCollection property="neun" destination="Jtl-dQ-3E6" collectionClass="NSMutableArray" id="sxW-KD-Rir"/>
+                        <outletCollection property="neun" destination="ANu-FG-RyB" collectionClass="NSMutableArray" id="tB6-bb-yYq"/>
+                        <outletCollection property="neun" destination="JDB-7h-uuc" collectionClass="NSMutableArray" id="dWn-pd-EqO"/>
+                        <outletCollection property="neun" destination="X6S-22-pnW" collectionClass="NSMutableArray" id="v7R-Jp-jtr"/>
+                        <outletCollection property="neun" destination="KtY-oT-NJp" collectionClass="NSMutableArray" id="MHY-2h-UhC"/>
+                        <outletCollection property="nullInnen" destination="VzA-U7-9hu" collectionClass="NSMutableArray" id="qdM-LP-GF8"/>
+                        <outletCollection property="nullInnen" destination="yGy-E0-JPO" collectionClass="NSMutableArray" id="tGI-5u-Sl9"/>
+                        <outletCollection property="nullInnen" destination="BXU-xM-f7e" collectionClass="NSMutableArray" id="YnP-fi-fY2"/>
+                        <outletCollection property="einsInnen" destination="8Ri-jQ-cBe" collectionClass="NSMutableArray" id="gIs-eb-8qU"/>
+                        <outletCollection property="einsInnen" destination="439-Ef-i1u" collectionClass="NSMutableArray" id="23u-N9-Xi3"/>
+                        <outletCollection property="einsInnen" destination="Vuy-5X-KOX" collectionClass="NSMutableArray" id="waA-Kd-fuu"/>
+                        <outletCollection property="einsInnen" destination="aOB-E2-HKq" collectionClass="NSMutableArray" id="4u9-oP-nju"/>
+                        <outletCollection property="einsInnen" destination="68n-ar-UPU" collectionClass="NSMutableArray" id="SJj-P4-FVK"/>
+                        <outletCollection property="einsInnen" destination="ySw-EP-9de" collectionClass="NSMutableArray" id="6u0-hX-Q3P"/>
+                        <outletCollection property="einsInnen" destination="VzA-U7-9hu" collectionClass="NSMutableArray" id="7br-Vi-YOX"/>
+                        <outletCollection property="einsInnen" destination="yGy-E0-JPO" collectionClass="NSMutableArray" id="fZm-uh-aRk"/>
+                        <outletCollection property="einsInnen" destination="BXU-xM-f7e" collectionClass="NSMutableArray" id="Z7P-wS-Zj6"/>
+                        <outletCollection property="einsInnen" destination="0gO-la-bEE" collectionClass="NSMutableArray" id="cvn-Dd-5bD"/>
+                        <outletCollection property="zwei" destination="Vuy-5X-KOX" collectionClass="NSMutableArray" id="mzX-Mx-Vqh"/>
+                        <outletCollection property="zwei" destination="JDB-7h-uuc" collectionClass="NSMutableArray" id="wpV-hi-fbJ"/>
+                        <outletCollection property="zweiInnen" destination="439-Ef-i1u" collectionClass="NSMutableArray" id="eS6-tI-f8d"/>
+                        <outletCollection property="zweiInnen" destination="VzA-U7-9hu" collectionClass="NSMutableArray" id="uL3-hj-DhT"/>
+                        <outletCollection property="zweiInnen" destination="BXU-xM-f7e" collectionClass="NSMutableArray" id="ikk-jZ-zQw"/>
+                        <outletCollection property="zweiInnen" destination="X6S-22-pnW" collectionClass="NSMutableArray" id="mCo-wg-F9U"/>
+                        <outletCollection property="dreiInnen" destination="439-Ef-i1u" collectionClass="NSMutableArray" id="fYf-gC-GhX"/>
+                        <outletCollection property="dreiInnen" destination="aOB-E2-HKq" collectionClass="NSMutableArray" id="AJy-c9-3zo"/>
+                        <outletCollection property="dreiInnen" destination="VzA-U7-9hu" collectionClass="NSMutableArray" id="RX3-od-bLd"/>
+                        <outletCollection property="dreiInnen" destination="BXU-xM-f7e" collectionClass="NSMutableArray" id="IC5-LL-ppf"/>
+                        <outletCollection property="vierInnen" destination="aOB-E2-HKq" collectionClass="NSMutableArray" id="MCn-4c-zAC"/>
+                        <outletCollection property="vierInnen" destination="68n-ar-UPU" collectionClass="NSMutableArray" id="MSL-Zu-zpu"/>
+                        <outletCollection property="vierInnen" destination="ySw-EP-9de" collectionClass="NSMutableArray" id="WpE-eu-rYQ"/>
+                        <outletCollection property="vierInnen" destination="VzA-U7-9hu" collectionClass="NSMutableArray" id="ECY-IU-Ull"/>
+                        <outletCollection property="vierInnen" destination="BXU-xM-f7e" collectionClass="NSMutableArray" id="eER-6c-stt"/>
+                        <outletCollection property="vierInnen" destination="0gO-la-bEE" collectionClass="NSMutableArray" id="Z6N-rd-tsA"/>
+                        <outletCollection property="fuenfInnen" destination="aOB-E2-HKq" collectionClass="NSMutableArray" id="hcR-ra-nxj"/>
+                        <outletCollection property="fuenfInnen" destination="VzA-U7-9hu" collectionClass="NSMutableArray" id="xHB-P9-5t2"/>
+                        <outletCollection property="fuenfInnen" destination="BXU-xM-f7e" collectionClass="NSMutableArray" id="CaP-c9-tfY"/>
+                        <outletCollection property="fuenfInnen" destination="ANu-FG-RyB" collectionClass="NSMutableArray" id="1GP-0r-aXa"/>
+                        <outletCollection property="sechsInnen" destination="VzA-U7-9hu" collectionClass="NSMutableArray" id="XSf-Tk-3b2"/>
+                        <outletCollection property="sechsInnen" destination="BXU-xM-f7e" collectionClass="NSMutableArray" id="OWC-Gm-AR0"/>
+                        <outletCollection property="sechsInnen" destination="ANu-FG-RyB" collectionClass="NSMutableArray" id="Pve-3T-pMn"/>
+                        <outletCollection property="siebenInnen" destination="439-Ef-i1u" collectionClass="NSMutableArray" id="zRu-Y6-mLL"/>
+                        <outletCollection property="siebenInnen" destination="Vuy-5X-KOX" collectionClass="NSMutableArray" id="EvN-Df-Mhq"/>
+                        <outletCollection property="siebenInnen" destination="aOB-E2-HKq" collectionClass="NSMutableArray" id="GCo-IN-sbl"/>
+                        <outletCollection property="siebenInnen" destination="68n-ar-UPU" collectionClass="NSMutableArray" id="Agv-HF-7Ey"/>
+                        <outletCollection property="siebenInnen" destination="VzA-U7-9hu" collectionClass="NSMutableArray" id="gnu-at-aIq"/>
+                        <outletCollection property="siebenInnen" destination="yGy-E0-JPO" collectionClass="NSMutableArray" id="tLx-EG-QGA"/>
+                        <outletCollection property="siebenInnen" destination="0gO-la-bEE" collectionClass="NSMutableArray" id="VSY-Kk-pAj"/>
+                        <outletCollection property="siebenInnen" destination="BXU-xM-f7e" collectionClass="NSMutableArray" id="QQs-JE-qUe"/>
+                        <outletCollection property="achtInnen" destination="VzA-U7-9hu" collectionClass="NSMutableArray" id="9IW-b7-gIo"/>
+                        <outletCollection property="neunInnen" destination="aOB-E2-HKq" collectionClass="NSMutableArray" id="5Sg-kW-gcj"/>
+                        <outletCollection property="neunInnen" destination="68n-ar-UPU" collectionClass="NSMutableArray" id="CpJ-AJ-rVN"/>
+                        <outletCollection property="neunInnen" destination="VzA-U7-9hu" collectionClass="NSMutableArray" id="fc0-wT-IrS"/>
+                        <outletCollection property="neunInnen" destination="BXU-xM-f7e" collectionClass="NSMutableArray" id="d7W-vL-ezz"/>
+                        <outletCollection property="neunInnen" destination="0gO-la-bEE" collectionClass="NSMutableArray" id="PxC-RU-ECD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ix0-Pt-sCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="F9a-bn-FV0">
+                    <connections>
+                        <segue destination="gKM-7H-42n" kind="show" id="Lvp-Lb-lnr"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-1192.5" y="291.54929577464787"/>
+        </scene>
+        <!--Single View Controller-->
+        <scene sceneID="4aA-Bi-6Zc">
+            <objects>
+                <viewController id="Cvm-5R-D3B" customClass="SingleViewController" customModule="EpileppiAberHappy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TQb-HV-gkv"/>
+                        <viewControllerLayoutGuide type="bottom" id="4mF-xe-6fG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FKq-cq-AET">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvA-on-2cg">
+                                <rect key="frame" x="8" y="8" width="304" height="552"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <action selector="pressChange:" destination="Cvm-5R-D3B" eventType="touchUpInside" id="UzD-Wp-VIn"/>
+                                    <outletCollection property="gestureRecognizers" destination="TLB-AP-CgA" appends="YES" id="2PM-xI-TTq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3858123148" green="0.73850388600000005" blue="0.1213555397" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qvA-on-2cg" firstAttribute="top" secondItem="TQb-HV-gkv" secondAttribute="bottom" constant="-12" id="Jis-oB-ZcZ"/>
+                            <constraint firstItem="4mF-xe-6fG" firstAttribute="top" secondItem="qvA-on-2cg" secondAttribute="bottom" constant="8" id="VBc-4Q-CWf"/>
+                            <constraint firstItem="qvA-on-2cg" firstAttribute="leading" secondItem="FKq-cq-AET" secondAttribute="leadingMargin" constant="-8" id="Z3K-KK-92w"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qvA-on-2cg" secondAttribute="trailing" constant="-8" id="dLf-Fr-xgD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="changeColor" destination="qvA-on-2cg" id="Itm-nc-aVW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G8Q-4x-eOA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="TLB-AP-CgA">
+                    <connections>
+                        <segue destination="gKM-7H-42n" kind="show" id="jer-Ut-tf3"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-345" y="-556"/>
+        </scene>
         <!--View Controller-->
+        <scene sceneID="dz7-Py-Nai">
+            <objects>
+                <viewController id="gKM-7H-42n" customClass="ViewController" customModule="EpileppiAberHappy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0HX-ZV-Ir4"/>
+                        <viewControllerLayoutGuide type="bottom" id="NvX-Ef-PBU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mwO-zc-bDv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EQ1-on-m05">
+                                <rect key="frame" x="83" y="159" width="155" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzj-fR-3eP">
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Single Mode">
+                                            <color key="titleColor" red="1" green="0.12302772319999999" blue="0.093296897820000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Cvm-5R-D3B" kind="show" identifier="singlePath" id="53x-6p-ZqU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.093781888055088553" green="0.73850388600000005" blue="0.73221947434713652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NRA-Nx-IFw">
+                                <rect key="frame" x="83" y="268" width="155" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPt-ru-1SD">
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Double Mode">
+                                            <color key="titleColor" red="0.11127503475646749" green="1" blue="0.85585083703342124" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="LOd-kr-9Zz" kind="show" id="Oy4-NP-Tnu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.38351130490000002" green="0.73586684469999997" blue="0.12066235390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rfo-Tr-UGB">
+                                <rect key="frame" x="83" y="323" width="155" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1d-Mg-r8L">
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="?????????">
+                                            <color key="titleColor" red="1" green="0.88932480008763692" blue="0.16561273523519338" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="966-vg-9kC" kind="show" identifier="questPath" id="lb5-Sq-4ZS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.73586684469999997" green="0.11708626132083158" blue="0.073074797772026912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Happy Epilepsy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcU-qk-ow1">
+                                <rect key="frame" x="67" y="42" width="187" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.97570127250000005" green="0.96967750789999996" blue="0.30202084779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FbQ-8B-NT8">
+                                <rect key="frame" x="83" y="212" width="155" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXp-UW-epY">
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Crazy Mode">
+                                            <color key="titleColor" red="0.15634075267459246" green="0.1527624143584656" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="crazyPath" id="JAU-4B-8gc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.73586684469999997" green="0.53939793618419829" blue="0.27832322782837532" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7fh-9O-4Kw">
+                                <rect key="frame" x="136" y="509" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="musicSwitch:" destination="gKM-7H-42n" eventType="valueChanged" id="1pK-kt-1fK"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Musik off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xW-Ny-TGh">
+                                <rect key="frame" x="44" y="514" width="71" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.95664471387863159" green="0.95436316728591919" blue="0.30519017577171326" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Musik on" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUF-1u-jQU">
+                                <rect key="frame" x="211" y="514" width="69" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.97570127250000005" green="0.96967750789999996" blue="0.30202084779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.17397755379999999" green="0.28130957480000002" blue="0.56475198270000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="switchButton" destination="7fh-9O-4Kw" id="JuM-uc-rj2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jck-UF-Je2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-345" y="349"/>
+        </scene>
+        <!--Double View Controller-->
+        <scene sceneID="Lpm-QV-Qgc">
+            <objects>
+                <viewController id="LOd-kr-9Zz" customClass="DoubleViewController" customModule="EpileppiAberHappy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sgr-Uc-nhV"/>
+                        <viewControllerLayoutGuide type="bottom" id="928-aT-KOL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hIG-3h-XkY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4vs-Ln-u1M">
+                                <rect key="frame" x="0.0" y="275" width="320" height="18"/>
+                                <color key="backgroundColor" red="0.15629667050117291" green="0.50878912198123061" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ST-pL-bjh">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="275"/>
+                                <color key="backgroundColor" red="0.4992716908454895" green="0.94819861650466919" blue="0.1383189857006073" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="1gZ-WX-Rvg"/>
+                                    <constraint firstAttribute="height" constant="275" id="y6t-DB-VgR"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Djp-Bi-eYX">
+                                <rect key="frame" x="0.0" y="293" width="320" height="275"/>
+                                <color key="backgroundColor" red="0.1980459665868462" green="0.97570127250000005" blue="0.093070367138296833" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKF-8o-FRH">
+                                <rect key="frame" x="16" y="20" width="288" height="528"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Press">
+                                    <color key="titleColor" red="0.4992716908454895" green="0.94819861650466919" blue="0.1383189857006073" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressButton:" destination="LOd-kr-9Zz" eventType="touchUpInside" id="6mC-U8-nLM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Djp-Bi-eYX" firstAttribute="bottom" secondItem="928-aT-KOL" secondAttribute="top" id="6f9-jL-LEI"/>
+                            <constraint firstItem="3ST-pL-bjh" firstAttribute="trailing" secondItem="4vs-Ln-u1M" secondAttribute="trailing" id="7Ya-dI-nHr"/>
+                            <constraint firstItem="3ST-pL-bjh" firstAttribute="leading" secondItem="hIG-3h-XkY" secondAttribute="leading" id="E3n-q6-e4r"/>
+                            <constraint firstItem="4vs-Ln-u1M" firstAttribute="leading" secondItem="Djp-Bi-eYX" secondAttribute="leading" id="NnU-ek-t2m"/>
+                            <constraint firstItem="3ST-pL-bjh" firstAttribute="leading" secondItem="4vs-Ln-u1M" secondAttribute="leading" id="PK7-2J-JWP"/>
+                            <constraint firstItem="4vs-Ln-u1M" firstAttribute="trailing" secondItem="Djp-Bi-eYX" secondAttribute="trailing" id="R15-Jn-m5j"/>
+                            <constraint firstItem="3ST-pL-bjh" firstAttribute="top" secondItem="hIG-3h-XkY" secondAttribute="top" id="Uq9-WK-Td2"/>
+                            <constraint firstItem="4vs-Ln-u1M" firstAttribute="centerY" secondItem="hIG-3h-XkY" secondAttribute="centerY" id="d68-a4-lgg"/>
+                            <constraint firstItem="Djp-Bi-eYX" firstAttribute="top" secondItem="4vs-Ln-u1M" secondAttribute="bottom" id="lx6-c7-Sjn"/>
+                            <constraint firstItem="4vs-Ln-u1M" firstAttribute="top" secondItem="3ST-pL-bjh" secondAttribute="bottom" id="wCB-9J-KSa"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="zO6-Hr-Ted" appends="YES" id="0Lz-Ms-guF"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="ChangeColor" destination="NKF-8o-FRH" id="kds-ga-N0g"/>
+                        <outlet property="bottomView" destination="Djp-Bi-eYX" id="cht-6b-cDN"/>
+                        <outlet property="changeColor" destination="NKF-8o-FRH" id="wd1-XZ-yPN"/>
+                        <outlet property="midView" destination="4vs-Ln-u1M" id="06x-bb-6ER"/>
+                        <outlet property="topView" destination="3ST-pL-bjh" id="mzi-G5-KGE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQX-bc-Zb9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="zO6-Hr-Ted">
+                    <connections>
+                        <segue destination="gKM-7H-42n" kind="show" id="PPQ-iH-Xhr"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-318.75" y="1098.5915492957747"/>
+        </scene>
+        <!--Eight Mode View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="EightModeViewController" customModule="EpileppiAberHappy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dBr-X9-Eh6">
+                                <rect key="frame" x="160" y="0.0" width="160" height="630"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dai-p4-8Xa">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="50"/>
+                                        <color key="backgroundColor" red="0.99702477329999994" green="0.71007401910000001" blue="0.143060613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lgK-mQ-xw6">
+                                        <rect key="frame" x="0.0" y="58" width="160" height="50"/>
+                                        <color key="backgroundColor" red="0.99702477329999994" green="0.71007401910000001" blue="0.143060613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pPk-bQ-WF7">
+                                        <rect key="frame" x="0.0" y="116" width="160" height="50"/>
+                                        <color key="backgroundColor" red="0.99702477329999994" green="0.71007401910000001" blue="0.143060613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gha-KB-N4e">
+                                        <rect key="frame" x="0.0" y="174" width="160" height="50"/>
+                                        <color key="backgroundColor" red="0.99702477329999994" green="0.71007401910000001" blue="0.143060613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zZg-eQ-bgb">
+                                        <rect key="frame" x="0.0" y="232" width="160" height="50"/>
+                                        <color key="backgroundColor" red="0.99702477329999994" green="0.71007401910000001" blue="0.143060613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iXh-1e-Dhw">
+                                        <rect key="frame" x="0.0" y="290" width="160" height="50"/>
+                                        <color key="backgroundColor" red="0.99702477329999994" green="0.71007401910000001" blue="0.143060613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DU8-K0-ICg">
+                                        <rect key="frame" x="0.0" y="348" width="160" height="50"/>
+                                        <color key="backgroundColor" red="0.99702477329999994" green="0.71007401910000001" blue="0.143060613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h8V-af-LIu">
+                                        <rect key="frame" x="0.0" y="406" width="160" height="50"/>
+                                        <color key="backgroundColor" red="0.99702477329999994" green="0.71007401910000001" blue="0.143060613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xT7-SC-bH6">
+                                        <rect key="frame" x="0.0" y="464" width="160" height="50"/>
+                                        <color key="backgroundColor" red="0.99702477329999994" green="0.71007401910000001" blue="0.143060613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eyc-if-bLy">
+                                        <rect key="frame" x="0.0" y="522" width="160" height="50"/>
+                                        <color key="backgroundColor" red="0.99702477329999994" green="0.71007401910000001" blue="0.143060613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YhF-Gr-9WA">
+                                        <rect key="frame" x="0.0" y="580" width="160" height="50"/>
+                                        <color key="backgroundColor" red="0.99702477329999994" green="0.71007401910000001" blue="0.143060613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="YhF-Gr-9WA" firstAttribute="top" secondItem="dBr-X9-Eh6" secondAttribute="top" constant="580" id="CvJ-OM-apv"/>
+                                    <constraint firstItem="eyc-if-bLy" firstAttribute="top" secondItem="dBr-X9-Eh6" secondAttribute="top" constant="522" id="OBo-Nc-ie2"/>
+                                    <constraint firstItem="zZg-eQ-bgb" firstAttribute="top" secondItem="dBr-X9-Eh6" secondAttribute="top" constant="232" id="Rps-1d-tbx"/>
+                                    <constraint firstItem="iXh-1e-Dhw" firstAttribute="top" secondItem="dBr-X9-Eh6" secondAttribute="top" constant="290" id="UNA-cC-tQq"/>
+                                    <constraint firstItem="iXh-1e-Dhw" firstAttribute="centerY" secondItem="dBr-X9-Eh6" secondAttribute="centerY" id="V4S-R5-ju2"/>
+                                    <constraint firstItem="lgK-mQ-xw6" firstAttribute="top" secondItem="dBr-X9-Eh6" secondAttribute="top" constant="58" id="bNK-F9-kat"/>
+                                    <constraint firstItem="pPk-bQ-WF7" firstAttribute="top" secondItem="dBr-X9-Eh6" secondAttribute="top" constant="116" id="c7Q-hZ-g7u"/>
+                                    <constraint firstItem="h8V-af-LIu" firstAttribute="top" secondItem="dBr-X9-Eh6" secondAttribute="top" constant="406" id="itL-Hj-dFe"/>
+                                    <constraint firstItem="Gha-KB-N4e" firstAttribute="top" secondItem="dBr-X9-Eh6" secondAttribute="top" constant="174" id="kYL-lM-Jgk"/>
+                                    <constraint firstItem="xT7-SC-bH6" firstAttribute="top" secondItem="dBr-X9-Eh6" secondAttribute="top" constant="464" id="nD5-B5-Z6k"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Qtm-1c-GHZ">
+                                <rect key="frame" x="0.0" y="0.0" width="160" height="630"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H93-hB-Vbe">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="50"/>
+                                        <color key="backgroundColor" red="0.99702477329999994" green="0.71007401910000001" blue="0.143060613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mzR-zS-Vfg">
+                                        <rect key="frame" x="0.0" y="58" width="160" height="50"/>
+                                        <color key="backgroundColor" red="0.99702477329999994" green="0.71007401910000001" blue="0.143060613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ztp-47-dlF">
+                                        <rect key="frame" x="0.0" y="116" width="160" height="50"/>
+                                        <color key="backgroundColor" red="0.99702477329999994" green="0.71007401910000001" blue="0.143060613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RCV-yw-716">
+                                        <rect key="frame" x="0.0" y="174" width="160" height="50"/>
+                                        <color key="backgroundColor" red="0.99702477329999994" green="0.71007401910000001" blue="0.143060613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MsE-bC-hRC">
+                                        <rect key="frame" x="0.0" y="232" width="160" height="50"/>
+                                        <color key="backgroundColor" red="0.99702477329999994" green="0.71007401910000001" blue="0.143060613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L0x-C7-neV">
+                                        <rect key="frame" x="0.0" y="290" width="160" height="50"/>
+                                        <color key="backgroundColor" red="0.99702477329999994" green="0.71007401910000001" blue="0.143060613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sYA-OU-qWZ">
+                                        <rect key="frame" x="0.0" y="348" width="160" height="50"/>
+                                        <color key="backgroundColor" red="0.99702477329999994" green="0.71007401910000001" blue="0.143060613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X5D-2q-djU">
+                                        <rect key="frame" x="0.0" y="406" width="160" height="50"/>
+                                        <color key="backgroundColor" red="0.99702477329999994" green="0.71007401910000001" blue="0.143060613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1y5-Z6-UHW">
+                                        <rect key="frame" x="0.0" y="464" width="160" height="50"/>
+                                        <color key="backgroundColor" red="0.99702477329999994" green="0.71007401910000001" blue="0.143060613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Hs-iA-1L9">
+                                        <rect key="frame" x="0.0" y="522" width="160" height="50"/>
+                                        <color key="backgroundColor" red="0.99702477329999994" green="0.71007401910000001" blue="0.143060613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LcP-JA-558">
+                                        <rect key="frame" x="0.0" y="580" width="160" height="42"/>
+                                        <color key="backgroundColor" red="0.99702477329999994" green="0.71007401910000001" blue="0.143060613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hz-nK-6ZB">
+                                        <rect key="frame" x="0.0" y="630" width="160" height="0.0"/>
+                                        <connections>
+                                            <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="caP-U9-HcF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="LcP-JA-558" firstAttribute="top" secondItem="Qtm-1c-GHZ" secondAttribute="top" constant="580" id="Cea-xO-AKR"/>
+                                    <constraint firstItem="X5D-2q-djU" firstAttribute="top" secondItem="Qtm-1c-GHZ" secondAttribute="top" constant="406" id="J4F-tm-fUj"/>
+                                    <constraint firstItem="ztp-47-dlF" firstAttribute="top" secondItem="Qtm-1c-GHZ" secondAttribute="top" constant="116" id="JTk-2g-oZA"/>
+                                    <constraint firstItem="RCV-yw-716" firstAttribute="top" secondItem="Qtm-1c-GHZ" secondAttribute="top" constant="174" id="JZc-hn-tDF"/>
+                                    <constraint firstItem="L0x-C7-neV" firstAttribute="centerY" secondItem="Qtm-1c-GHZ" secondAttribute="centerY" id="N2S-v3-nxV"/>
+                                    <constraint firstItem="MsE-bC-hRC" firstAttribute="top" secondItem="Qtm-1c-GHZ" secondAttribute="top" constant="232" id="UYB-sL-gRx"/>
+                                    <constraint firstItem="3Hs-iA-1L9" firstAttribute="top" secondItem="Qtm-1c-GHZ" secondAttribute="top" constant="522" id="XhE-zj-rZT"/>
+                                    <constraint firstItem="mzR-zS-Vfg" firstAttribute="top" secondItem="Qtm-1c-GHZ" secondAttribute="top" constant="58" id="Z6a-FP-9pI"/>
+                                    <constraint firstItem="L0x-C7-neV" firstAttribute="top" secondItem="Qtm-1c-GHZ" secondAttribute="top" constant="290" id="lVc-GZ-5nv"/>
+                                    <constraint firstItem="1y5-Z6-UHW" firstAttribute="top" secondItem="Qtm-1c-GHZ" secondAttribute="top" constant="464" id="xye-cl-afa"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="dBr-X9-Eh6" secondAttribute="bottom" constant="-62" id="FKv-4I-FHb"/>
+                            <constraint firstItem="Qtm-1c-GHZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HIU-k1-Nyl"/>
+                            <constraint firstItem="dBr-X9-Eh6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="160" id="Srw-cQ-aVk"/>
+                            <constraint firstAttribute="trailing" secondItem="dBr-X9-Eh6" secondAttribute="trailing" id="arj-4G-n2G"/>
+                            <constraint firstItem="dBr-X9-Eh6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eRc-pg-mtP"/>
+                            <constraint firstItem="dBr-X9-Eh6" firstAttribute="bottom" secondItem="Qtm-1c-GHZ" secondAttribute="bottom" id="ikB-TG-y6o"/>
+                            <constraint firstItem="dBr-X9-Eh6" firstAttribute="top" secondItem="Qtm-1c-GHZ" secondAttribute="top" id="tga-IE-3PH"/>
+                            <constraint firstItem="dBr-X9-Eh6" firstAttribute="leading" secondItem="Qtm-1c-GHZ" secondAttribute="trailing" id="vte-e3-CZ3"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="6R2-dZ-aqS" appends="YES" id="fKc-fP-Qvc"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="viewEight" destination="Gha-KB-N4e" id="gEB-SI-weg"/>
+                        <outlet property="viewFive" destination="ztp-47-dlF" id="YnD-HN-ueZ"/>
+                        <outlet property="viewFour" destination="lgK-mQ-xw6" id="BOp-wW-be9"/>
+                        <outlet property="viewOne" destination="H93-hB-Vbe" id="eq2-7M-SCT"/>
+                        <outlet property="viewSeven" destination="RCV-yw-716" id="zuO-qB-tdN"/>
+                        <outlet property="viewSix" destination="pPk-bQ-WF7" id="lxR-Uo-WLZ"/>
+                        <outlet property="viewThree" destination="mzR-zS-Vfg" id="P5p-Cz-E4a"/>
+                        <outlet property="viewTwo" destination="dai-p4-8Xa" id="t4G-ae-2pO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="6R2-dZ-aqS">
+                    <connections>
+                        <segue destination="gKM-7H-42n" kind="show" id="KCJ-mN-G5R"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="731" y="127"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="KCJ-mN-G5R"/>
+    </inferredMetricsTieBreakers>
 </document>

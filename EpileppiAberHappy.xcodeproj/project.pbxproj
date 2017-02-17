@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		549C11B81E5607F40076EA48 /* SingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549C11B71E5607F40076EA48 /* SingleViewController.swift */; };
+		549C11BD1E5619FD0076EA48 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 549C11BC1E5619FD0076EA48 /* AVFoundation.framework */; };
+		549C11C01E561C930076EA48 /* Tetris_Dubstep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 549C11BE1E561C930076EA48 /* Tetris_Dubstep.wav */; };
+		549C11C11E561C930076EA48 /* Tetris_-_Tetris.wav in Resources */ = {isa = PBXBuildFile; fileRef = 549C11BF1E561C930076EA48 /* Tetris_-_Tetris.wav */; };
+		549C11E11E5673600076EA48 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549C11E01E5673600076EA48 /* QuestionViewController.swift */; };
+		54CC1B3B1E54CCE900CB83A2 /* EightModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC1B3A1E54CCE900CB83A2 /* EightModeViewController.swift */; };
+		54CC1B3D1E55182800CB83A2 /* DoubleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC1B3C1E55182800CB83A2 /* DoubleViewController.swift */; };
 		F76FCB6D1E4FE83C00A014F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76FCB6C1E4FE83C00A014F0 /* AppDelegate.swift */; };
 		F76FCB6F1E4FE83C00A014F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76FCB6E1E4FE83C00A014F0 /* ViewController.swift */; };
 		F76FCB721E4FE83C00A014F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76FCB701E4FE83C00A014F0 /* Main.storyboard */; };
@@ -34,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		549C11B71E5607F40076EA48 /* SingleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleViewController.swift; sourceTree = "<group>"; };
+		549C11BC1E5619FD0076EA48 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		549C11BE1E561C930076EA48 /* Tetris_Dubstep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Tetris_Dubstep.wav; sourceTree = "<group>"; };
+		549C11BF1E561C930076EA48 /* Tetris_-_Tetris.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Tetris_-_Tetris.wav"; sourceTree = "<group>"; };
+		549C11E01E5673600076EA48 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		54CC1B3A1E54CCE900CB83A2 /* EightModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EightModeViewController.swift; sourceTree = "<group>"; };
+		54CC1B3C1E55182800CB83A2 /* DoubleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleViewController.swift; sourceTree = "<group>"; };
 		F76FCB691E4FE83C00A014F0 /* EpileppiAberHappy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EpileppiAberHappy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F76FCB6C1E4FE83C00A014F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F76FCB6E1E4FE83C00A014F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				549C11BD1E5619FD0076EA48 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +89,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		549C11B91E5619C40076EA48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				549C11BC1E5619FD0076EA48 /* AVFoundation.framework */,
+				549C11BA1E5619DB0076EA48 /* Audio Files */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		549C11BA1E5619DB0076EA48 /* Audio Files */ = {
+			isa = PBXGroup;
+			children = (
+				549C11BE1E561C930076EA48 /* Tetris_Dubstep.wav */,
+				549C11BF1E561C930076EA48 /* Tetris_-_Tetris.wav */,
+			);
+			name = "Audio Files";
+			sourceTree = "<group>";
+		};
+		549C11BB1E5619FD0076EA48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F76FCB601E4FE83C00A014F0 = {
 			isa = PBXGroup;
 			children = (
+				549C11B71E5607F40076EA48 /* SingleViewController.swift */,
+				54CC1B3C1E55182800CB83A2 /* DoubleViewController.swift */,
 				F76FCB6B1E4FE83C00A014F0 /* EpileppiAberHappy */,
 				F76FCB801E4FE83C00A014F0 /* EpileppiAberHappyTests */,
 				F76FCB8B1E4FE83C00A014F0 /* EpileppiAberHappyUITests */,
 				F76FCB6A1E4FE83C00A014F0 /* Products */,
+				549C11BB1E5619FD0076EA48 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +142,13 @@
 			children = (
 				F76FCB6C1E4FE83C00A014F0 /* AppDelegate.swift */,
 				F76FCB6E1E4FE83C00A014F0 /* ViewController.swift */,
+				549C11E01E5673600076EA48 /* QuestionViewController.swift */,
+				54CC1B3A1E54CCE900CB83A2 /* EightModeViewController.swift */,
 				F76FCB701E4FE83C00A014F0 /* Main.storyboard */,
 				F76FCB731E4FE83C00A014F0 /* Assets.xcassets */,
 				F76FCB751E4FE83C00A014F0 /* LaunchScreen.storyboard */,
 				F76FCB781E4FE83C00A014F0 /* Info.plist */,
+				549C11B91E5619C40076EA48 /* Supporting Files */,
 			);
 			path = EpileppiAberHappy;
 			sourceTree = "<group>";
@@ -193,7 +239,7 @@
 				TargetAttributes = {
 					F76FCB681E4FE83C00A014F0 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = V8G4U4EP2K;
+						DevelopmentTeam = S6KJ7JN9XX;
 						ProvisioningStyle = Automatic;
 					};
 					F76FCB7C1E4FE83C00A014F0 = {
@@ -237,7 +283,9 @@
 			files = (
 				F76FCB771E4FE83C00A014F0 /* LaunchScreen.storyboard in Resources */,
 				F76FCB741E4FE83C00A014F0 /* Assets.xcassets in Resources */,
+				549C11C01E561C930076EA48 /* Tetris_Dubstep.wav in Resources */,
 				F76FCB721E4FE83C00A014F0 /* Main.storyboard in Resources */,
+				549C11C11E561C930076EA48 /* Tetris_-_Tetris.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +311,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F76FCB6F1E4FE83C00A014F0 /* ViewController.swift in Sources */,
+				549C11B81E5607F40076EA48 /* SingleViewController.swift in Sources */,
+				549C11E11E5673600076EA48 /* QuestionViewController.swift in Sources */,
+				54CC1B3B1E54CCE900CB83A2 /* EightModeViewController.swift in Sources */,
 				F76FCB6D1E4FE83C00A014F0 /* AppDelegate.swift in Sources */,
+				54CC1B3D1E55182800CB83A2 /* DoubleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,10 +467,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V8G4U4EP2K;
+				DEVELOPMENT_TEAM = S6KJ7JN9XX;
 				INFOPLIST_FILE = EpileppiAberHappy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Jo.EpileppiAberHappy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MrRobot420.epilepsy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -428,10 +480,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V8G4U4EP2K;
+				DEVELOPMENT_TEAM = S6KJ7JN9XX;
 				INFOPLIST_FILE = EpileppiAberHappy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Jo.EpileppiAberHappy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MrRobot420.epilepsy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -514,6 +566,7 @@
 				F76FCB931E4FE83C00A014F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F76FCB941E4FE83C00A014F0 /* Build configuration list for PBXNativeTarget "EpileppiAberHappyTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +575,7 @@
 				F76FCB961E4FE83C00A014F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F76FCB971E4FE83C00A014F0 /* Build configuration list for PBXNativeTarget "EpileppiAberHappyUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +584,7 @@
 				F76FCB991E4FE83C00A014F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
