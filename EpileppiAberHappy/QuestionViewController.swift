@@ -18,7 +18,7 @@ class QuestionViewController: UIViewController {
     
     
     @IBAction func buttonPressed(_ sender: Any) {
-        var timer : Timer? = nil
+//        var timer : Timer? = nil
         let random = generateRandomAction()
         var background : UIColor
         background = getRandomColor()
@@ -226,7 +226,7 @@ class QuestionViewController: UIViewController {
             
         } else if (random == 5) {
             button.isHidden = true
-            timer = Timer.scheduledTimer(timeInterval: 0.10, target: self, selector: "", userInfo: nil, repeats: true);
+//            timer = Timer.scheduledTimer(timeInterval: 0.10, target: self, selector: "", userInfo: nil, repeats: true);
 
             var farbe1: UIColor
             farbe1 = getRandomColor()
@@ -353,15 +353,15 @@ class QuestionViewController: UIViewController {
     @IBOutlet var neun: [UIView]!
     @IBOutlet var neunInnen: [UIView]!
     
-    func countDown() {
-        if (++rolls > 10)
-        {
-            timer?.invalidate()
-            timer = nil
-            rolls = 0   // DCB added this presumed missing line
-            btnRoll_x.hidden = false //again, need to do this better
-        }
-    }
+//    func countDown() {
+//        if (++rolls > 10)
+//        {
+//            timer?.invalidate()
+//            timer = nil
+//            rolls = 0   // DCB added this presumed missing line
+//            btnRoll_x.hidden = false //again, need to do this better
+//        }
+//    }
     
     func generateRandomAction() -> Int {
         let random = Int(arc4random_uniform(UInt32(10)))

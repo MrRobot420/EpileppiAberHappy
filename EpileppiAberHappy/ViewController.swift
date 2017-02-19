@@ -9,22 +9,6 @@
 import UIKit
 import AVFoundation
 
-var player:AVAudioPlayer = AVAudioPlayer()
-var musicOn = false
-var musicCode = 0
-
-func setMusic(state: Int) {
-    if (state == 0) {
-        player.stop()
-        musicOn = false
-    } else if (state == 1) {
-        player.play()
-        musicOn = true
-    } else if (state == 2) {
-        player.pause()
-        musicOn = false
-    }
-}
 
 class ViewController: UIViewController {
   
