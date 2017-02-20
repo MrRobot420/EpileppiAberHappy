@@ -225,7 +225,7 @@ class QuestionViewController: UIViewController {
             
             
         } else if (random == 5) {
-            button.isHidden = true
+//            button.isHidden = true
 //            timer = Timer.scheduledTimer(timeInterval: 0.10, target: self, selector: "", userInfo: nil, repeats: true);
 
             var farbe1: UIColor
