@@ -437,27 +437,6 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.73586684469999997" green="0.53939793618419829" blue="0.27832322782837532" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7fh-9O-4Kw">
-                                <rect key="frame" x="136" y="509" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="musicSwitch:" destination="gKM-7H-42n" eventType="valueChanged" id="1pK-kt-1fK"/>
-                                </connections>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Musik off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xW-Ny-TGh">
-                                <rect key="frame" x="44" y="514" width="71" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.95664471387863159" green="0.95436316728591919" blue="0.30519017577171326" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Musik on" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUF-1u-jQU">
-                                <rect key="frame" x="211" y="514" width="69" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.97570127250000005" green="0.96967750789999996" blue="0.30202084779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rfo-Tr-UGB">
                                 <rect key="frame" x="83" y="303" width="155" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -476,7 +455,7 @@
                                 <color key="backgroundColor" red="0.73586684469999997" green="0.11708626132083158" blue="0.073074797772026912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ho-ea-w9N">
-                                <rect key="frame" x="83" y="461" width="155" height="40"/>
+                                <rect key="frame" x="83" y="508" width="155" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkq-hZ-GNX">
@@ -496,9 +475,6 @@
                         </subviews>
                         <color key="backgroundColor" red="0.17397755379999999" green="0.28130957480000002" blue="0.56475198270000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <connections>
-                        <outlet property="switchButton" destination="7fh-9O-4Kw" id="JuM-uc-rj2"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jck-UF-Je2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -578,10 +554,10 @@
             </objects>
             <point key="canvasLocation" x="-318.75" y="1098.5915492957747"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="goS-3r-CsO">
             <objects>
-                <viewController id="jwM-BH-KkS" sceneMemberID="viewController">
+                <viewController id="jwM-BH-KkS" customClass="SettingsViewController" customModule="EpileppiAberHappy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gbb-X6-KAW"/>
                         <viewControllerLayoutGuide type="bottom" id="hTE-y2-gk2"/>
@@ -593,6 +569,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JHe-Gp-nFq">
                                 <rect key="frame" x="136" y="483" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchSwitched:" destination="jwM-BH-KkS" eventType="valueChanged" id="x0z-X2-h5F"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Music" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjZ-B0-gmd">
                                 <rect key="frame" x="111" y="28" width="99" height="38"/>
@@ -658,6 +637,9 @@
                             <outletCollection property="gestureRecognizers" destination="gcc-Wu-nBa" appends="YES" id="jhH-kd-Bf5"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="switchButton" destination="JHe-Gp-nFq" id="0vw-64-oaE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JsO-vK-wTL" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="gcc-Wu-nBa">
@@ -864,6 +846,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PPQ-iH-Xhr"/>
+        <segue reference="Bys-kw-mIV"/>
     </inferredMetricsTieBreakers>
 </document>
