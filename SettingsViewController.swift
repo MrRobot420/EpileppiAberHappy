@@ -12,7 +12,7 @@ import AVFoundation
 var player:AVAudioPlayer = AVAudioPlayer()
 var musicOn = false
 var musicCode = 0
-var audioPath = ""
+var audioPath = Bundle.main.path(forResource: "Tetris_Dubstep", ofType: "wav")!
 
 func setAudioPath(songPath: String) {
     do {
@@ -43,7 +43,23 @@ class SettingsViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         switchButton.setOn(false, animated:true)
+        if (musicOn == false) { setAudioPath(songPath: "Tetris_Dubstep") }
+        
         checkForMusic()
+        
+    }
+    
+    func checkForMusic() {
+        if (musicOn == true) {
+            //switchButton.setValue(true, forUndefinedKey: "true")
+            switchButton.setOn(true, animated:true)
+            setMusic(state: 1)
+        } else if ((musicOn == false)) {
+            switchButton.setOn(false, animated:true)
+            
+            
+            setMusic(state: 0)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -70,6 +86,8 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var song1: UIButton!
     @IBOutlet weak var song2: UIButton!
     @IBOutlet weak var song3: UIButton!
+    @IBOutlet weak var song4: UIButton!
+    @IBOutlet weak var song5: UIButton!
     
     //Was bei Button1 Passiert:
     @IBAction func useTetrisNormal(_ sender: Any) {
@@ -80,20 +98,20 @@ class SettingsViewController: UIViewController {
         setAudioPath(songPath: "Tetris_Dubstep")
     }
     
-    
-    
-    func checkForMusic() {
-        if (musicOn == true) {
-            //switchButton.setValue(true, forUndefinedKey: "true")
-            switchButton.setOn(true, animated:true)
-            setMusic(state: 1)
-        } else if ((musicOn == false)) {
-            switchButton.setOn(false, animated:true)
-           
-            
-            setMusic(state: 0)
-        }
+    @IBAction func useColorTherapy(_ sender: Any) {
+        setAudioPath(songPath: "Color_Therapy")
     }
+    
+    @IBAction func useCantStop(_ sender: Any) {
+        setAudioPath(songPath: "I_Cant_Stop")
+    }
+    
+    @IBAction func useEyesOnFire(_ sender: Any) {
+        setAudioPath(songPath: "Eyes_On_Fire")
+    }
+    
+    
+   
 
     
     /*

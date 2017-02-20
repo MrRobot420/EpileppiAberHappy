@@ -616,7 +616,28 @@
                                 <rect key="frame" x="109" y="267" width="101" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.97006732225418091" green="0.9681209921836853" blue="0.20847606658935547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="New Song"/>
+                                <state key="normal" title="Color Therapy"/>
+                                <connections>
+                                    <action selector="useColorTherapy:" destination="jwM-BH-KkS" eventType="touchUpInside" id="LuF-qJ-lzf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TT4-rY-qGQ">
+                                <rect key="frame" x="109" y="305" width="101" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97006732230000003" green="0.96812099220000003" blue="0.20847606660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="I Cant Stop"/>
+                                <connections>
+                                    <action selector="useCantStop:" destination="jwM-BH-KkS" eventType="touchUpInside" id="J2N-em-7LA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Arf-y4-QeU">
+                                <rect key="frame" x="109" y="343" width="101" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97006732230000003" green="0.96812099220000003" blue="0.20847606660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Eyes On Fire"/>
+                                <connections>
+                                    <action selector="useEyesOnFire:" destination="jwM-BH-KkS" eventType="touchUpInside" id="iXH-uI-Ypy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.060337064081990834" green="0.667381526919826" blue="0.92610508419689119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -629,6 +650,8 @@
                         <outlet property="song1" destination="74o-gN-nFl" id="Z3n-Rb-be0"/>
                         <outlet property="song2" destination="43q-IM-2Xb" id="Jak-Fh-dWs"/>
                         <outlet property="song3" destination="Oiw-Lb-Fkj" id="6Dr-xd-aTc"/>
+                        <outlet property="song4" destination="TT4-rY-qGQ" id="TJd-qj-5Xo"/>
+                        <outlet property="song5" destination="Arf-y4-QeU" id="V91-l1-VvJ"/>
                         <outlet property="switchButton" destination="JHe-Gp-nFq" id="0vw-64-oaE"/>
                     </connections>
                 </viewController>
