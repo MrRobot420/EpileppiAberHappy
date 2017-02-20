@@ -92,22 +92,27 @@ class SettingsViewController: UIViewController {
     //Was bei Button1 Passiert:
     @IBAction func useTetrisNormal(_ sender: Any) {
         setAudioPath(songPath: "Tetris")
+        if (musicOn == true) {player.stop() ; player.play()}
     }
     
     @IBAction func useTetrisDubstep(_ sender: Any) {
         setAudioPath(songPath: "Tetris_Dubstep")
+        if (musicOn == true) {player.stop() ; player.play()}
     }
     
     @IBAction func useColorTherapy(_ sender: Any) {
         setAudioPath(songPath: "Color_Therapy")
+        if (musicOn == true) {player.stop() ; player.play()}
     }
     
     @IBAction func useCantStop(_ sender: Any) {
         setAudioPath(songPath: "I_Cant_Stop")
+        if (musicOn == true) {player.stop() ; player.play()}
     }
     
     @IBAction func useEyesOnFire(_ sender: Any) {
         setAudioPath(songPath: "Eyes_On_Fire")
+        if (musicOn == true) {player.stop() ; player.play()}
     }
     
     
