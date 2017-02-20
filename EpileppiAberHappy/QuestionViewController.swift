@@ -142,7 +142,7 @@ class QuestionViewController: UIViewController {
             farbe2 = background
             
             
-            let random2 = Int(arc4random_uniform(UInt32(10)))-1
+            let random2 = Int(arc4random_uniform(UInt32(11)))-1
             if (random2 == 0) {
                 for i in null {
                     i.backgroundColor = farbe1
@@ -225,106 +225,151 @@ class QuestionViewController: UIViewController {
             
             
         } else if (random == 5) {
-//            button.isHidden = true
-//            timer = Timer.scheduledTimer(timeInterval: 0.10, target: self, selector: "", userInfo: nil, repeats: true);
-
             var farbe1: UIColor
             farbe1 = getRandomColor()
             var farbe2: UIColor
-            farbe2 = background
+            farbe2 = getRandomColor()
             
-            var counter = 9
-            for _ in 1...10 {
-                if (counter == 0) {
-                    for i in null {
-                        i.backgroundColor = farbe1
-                    }
-                    for i in nullInnen {
-                        i.backgroundColor = farbe2
-                    }
-                    counter = counter - 1
-                } else if (counter == 1) {
-                    for i in eins {
-                        i.backgroundColor = farbe1
-                    }
-                    for i in einsInnen {
-                        i.backgroundColor = farbe2
-                    }
-                    counter = counter - 1
-                } else if (counter == 2) {
-                    for i in zwei {
-                        i.backgroundColor = farbe1
-                    }
-                    for i in zweiInnen {
-                        i.backgroundColor = farbe2
-                    }
-                    counter = counter - 1
-                } else if (counter == 3) {
-                    for i in drei {
-                        i.backgroundColor = farbe1
-                    }
-                    for i in dreiInnen {
-                        i.backgroundColor = farbe2
-                    }
-                    counter = counter - 1
-                } else if (counter == 4) {
-                    for i in vier {
-                        i.backgroundColor = farbe1
-                    }
-                    for i in vierInnen {
-                        i.backgroundColor = farbe2
-                    }
-                    counter = counter - 1
-                } else if (counter == 5) {
-                    for i in fuenf {
-                        i.backgroundColor = farbe1
-                    }
-                    for i in fuenfInnen {
-                        i.backgroundColor = farbe2
-                    }
-                    counter = counter - 1
-                } else if (counter == 6) {
-                    for i in sechs {
-                        i.backgroundColor = farbe1
-                    }
-                    for i in sechsInnen {
-                        i.backgroundColor = farbe2
-                    }
-                    counter = counter - 1
-                } else if (counter == 7) {
-                    for i in sieben {
-                        i.backgroundColor = farbe1
-                    }
-                    for i in siebenInnen {
-                        i.backgroundColor = farbe2
-                    }
-                    counter = counter - 1
-                } else if (counter == 8) {
-                    for i in acht {
-                        i.backgroundColor = farbe1
-                    }
-                    for i in achtInnen {
-                        i.backgroundColor = farbe2
-                    }
-                    counter = counter - 1
-                } else if (counter == 9) {
-                    for i in neun {
-                        i.backgroundColor = farbe1
-                    }
-                    for i in neunInnen {
-                        i.backgroundColor = farbe2
-                    }
-                    counter = counter - 1
-                }
+            A1.backgroundColor = farbe1
+            A2.backgroundColor = farbe1
+            A3.backgroundColor = farbe1
+            A4.backgroundColor = farbe1
+            A5.backgroundColor = farbe1
+            
+            B1.backgroundColor = farbe2
+            B2.backgroundColor = farbe2
+            B3.backgroundColor = farbe2
+            B4.backgroundColor = farbe2
+            B5.backgroundColor = farbe2
+            
+            C1.backgroundColor = farbe1
+            C2.backgroundColor = farbe1
+            C3.backgroundColor = farbe1
+            C4.backgroundColor = farbe1
+            C5.backgroundColor = farbe1
 
-            }
-           
+        } else if (random == 6) {
+            var farbe1: UIColor
+            farbe1 = getRandomColor()
+            var farbe2: UIColor
+            farbe2 = getRandomColor()
+            
+            A1.backgroundColor = farbe1
+            B1.backgroundColor = farbe1
+            C1.backgroundColor = farbe1
+            
+            A2.backgroundColor = farbe2
+            B2.backgroundColor = farbe2
+            C2.backgroundColor = farbe2
+            
+            A3.backgroundColor = farbe1
+            B3.backgroundColor = farbe1
+            C3.backgroundColor = farbe1
+            
+            A4.backgroundColor = farbe2
+            B4.backgroundColor = farbe2
+            C4.backgroundColor = farbe2
+            
+            A5.backgroundColor = farbe1
+            B5.backgroundColor = farbe1
+            C5.backgroundColor = farbe1
+        
+        } else if (random == 7) {
+            var farbe1: UIColor
+            farbe1 = getRandomColor()
+            var farbe2: UIColor
+            farbe2 = getRandomColor()
+            
+            A1.backgroundColor = farbe1
+            A2.backgroundColor = farbe1
+            A3.backgroundColor = farbe1
+            B3.backgroundColor = farbe1
+            C3.backgroundColor = farbe1
+            C4.backgroundColor = farbe1
+            C5.backgroundColor = farbe1
 
-        }
+            B1.backgroundColor = farbe2
+            B2.backgroundColor = farbe2
+            B4.backgroundColor = farbe2
+            B5.backgroundColor = farbe2
+            C1.backgroundColor = farbe2
+            C2.backgroundColor = farbe2
+            A4.backgroundColor = farbe2
+            A5.backgroundColor = farbe2
+            
+        } else if (random == 8) {
+            var farbe1: UIColor
+            farbe1 = getRandomColor()
+            var farbe2: UIColor
+            farbe2 = getRandomColor()
+            
+            C1.backgroundColor = farbe1
+            C2.backgroundColor = farbe1
+            C3.backgroundColor = farbe1
+            B3.backgroundColor = farbe1
+            A3.backgroundColor = farbe1
+            A4.backgroundColor = farbe1
+            A5.backgroundColor = farbe1
+            
+            B1.backgroundColor = farbe2
+            B2.backgroundColor = farbe2
+            B4.backgroundColor = farbe2
+            B5.backgroundColor = farbe2
+            A1.backgroundColor = farbe2
+            A2.backgroundColor = farbe2
+            C4.backgroundColor = farbe2
+            C5.backgroundColor = farbe2
+        
+        } else if (random == 9) {
+            var farbe1: UIColor
+            farbe1 = getRandomColor()
+            var farbe2: UIColor
+            farbe2 = getRandomColor()
+            
+            A1.backgroundColor = farbe1
+            B2.backgroundColor = farbe1
+            C3.backgroundColor = farbe1
+            B4.backgroundColor = farbe1
+            A5.backgroundColor = farbe1
+            
+            A2.backgroundColor = farbe2
+            A3.backgroundColor = farbe2
+            A4.backgroundColor = farbe2
+            B1.backgroundColor = farbe2
+            B3.backgroundColor = farbe2
+            B5.backgroundColor = farbe2
+            C1.backgroundColor = farbe2
+            C2.backgroundColor = farbe2
+            C4.backgroundColor = farbe2
+            C5.backgroundColor = farbe2
+            
+        } else if (random == 10) {
+            var farbe1: UIColor
+            farbe1 = getRandomColor()
+            var farbe2: UIColor
+            farbe2 = getRandomColor()
+            
+            C1.backgroundColor = farbe1
+            B2.backgroundColor = farbe1
+            A3.backgroundColor = farbe1
+            B4.backgroundColor = farbe1
+            C5.backgroundColor = farbe1
+            
+            A2.backgroundColor = farbe2
+            C3.backgroundColor = farbe2
+            A4.backgroundColor = farbe2
+            B1.backgroundColor = farbe2
+            B3.backgroundColor = farbe2
+            B5.backgroundColor = farbe2
+            A1.backgroundColor = farbe2
+            C2.backgroundColor = farbe2
+            C4.backgroundColor = farbe2
+            A5.backgroundColor = farbe2
+        
+        } 
     }
     @IBOutlet var null: [UIView]!
     @IBOutlet var nullInnen: [UIView]!
-    
     
     @IBOutlet var eins: [UIView]!
     @IBOutlet var einsInnen: [UIView]!
@@ -364,7 +409,7 @@ class QuestionViewController: UIViewController {
 //    }
     
     func generateRandomAction() -> Int {
-        let random = Int(arc4random_uniform(UInt32(10)))
+        let random = Int(arc4random_uniform(UInt32(11)))
         return random
     }
     
