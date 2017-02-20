@@ -31,7 +31,7 @@ class EightModeViewController: UIViewController {
     }
     
     @IBAction func bottonPressed(_ sender: Any) {
-        let random = Int(arc4random_uniform(UInt32(3)))
+        let random = generateRandomAction()
         if (random == 0) {
             var farbe1: UIColor
             farbe1 = getRandomColor()
@@ -124,13 +124,107 @@ class EightModeViewController: UIViewController {
             B6.backgroundColor = farbe2
             B8.backgroundColor = farbe2
             B10.backgroundColor = farbe2
+        
+        } else if (random == 3) {
+            var farbe1: UIColor
+            farbe1 = getRandomColor()
+            var farbe2: UIColor
+            farbe2 = getRandomColor()
+            
+            view.backgroundColor = getRandomColor()
+            A1.backgroundColor = farbe1
+            A2.backgroundColor = farbe1
+            B1.backgroundColor = farbe1
+            B2.backgroundColor = farbe1
+            
+            A3.backgroundColor = farbe2
+            A4.backgroundColor = farbe2
+            B3.backgroundColor = farbe2
+            B4.backgroundColor = farbe2
+            
+            A5.backgroundColor = farbe1
+            A6.backgroundColor = farbe1
+            B5.backgroundColor = farbe1
+            B6.backgroundColor = farbe1
+            
+            A7.backgroundColor = farbe2
+            A8.backgroundColor = farbe2
+            B7.backgroundColor = farbe2
+            B8.backgroundColor = farbe2
+            
+            A9.backgroundColor = farbe1
+            A10.backgroundColor = farbe1
+            B9.backgroundColor = farbe1
+            B10.backgroundColor = farbe1
+        
+        } else if (random == 4) {
+            var farbe1: UIColor
+            farbe1 = getRandomColor()
+            var farbe2: UIColor
+            farbe2 = getRandomColor()
+            
+            view.backgroundColor = getRandomColor()
+            A1.backgroundColor = farbe1
+            A2.backgroundColor = farbe1
+            A3.backgroundColor = farbe1
+            A4.backgroundColor = farbe1
+            A5.backgroundColor = farbe1
+            B6.backgroundColor = farbe1
+            B7.backgroundColor = farbe1
+            B8.backgroundColor = farbe1
+            B9.backgroundColor = farbe1
+            B10.backgroundColor = farbe1
+            
+            B1.backgroundColor = farbe2
+            B2.backgroundColor = farbe2
+            B3.backgroundColor = farbe2
+            B4.backgroundColor = farbe2
+            B5.backgroundColor = farbe2
+            A6.backgroundColor = farbe2
+            A7.backgroundColor = farbe2
+            A8.backgroundColor = farbe2
+            A9.backgroundColor = farbe2
+            A10.backgroundColor = farbe2
+            
+        } else if (random == 5) {
+            var farbe1: UIColor
+            farbe1 = getRandomColor()
+            var farbe2: UIColor
+            farbe2 = getRandomColor()
+            var farbe3: UIColor
+            farbe3 = getRandomColor()
+            var farbe4: UIColor
+            farbe4 = getRandomColor()
+            
+            view.backgroundColor = getRandomColor()
+            A1.backgroundColor = farbe1
+            A2.backgroundColor = farbe1
+            A3.backgroundColor = farbe1
+            A4.backgroundColor = farbe1
+            A5.backgroundColor = farbe1
+            B6.backgroundColor = farbe3
+            B7.backgroundColor = farbe3
+            B8.backgroundColor = farbe3
+            B9.backgroundColor = farbe3
+            B10.backgroundColor = farbe3
+            
+            B1.backgroundColor = farbe2
+            B2.backgroundColor = farbe2
+            B3.backgroundColor = farbe2
+            B4.backgroundColor = farbe2
+            B5.backgroundColor = farbe2
+            A6.backgroundColor = farbe4
+            A7.backgroundColor = farbe4
+            A8.backgroundColor = farbe4
+            A9.backgroundColor = farbe4
+            A10.backgroundColor = farbe4
         }
 
     }
    
     
     func generateRandomAction() -> Int {
-        let random = Int(arc4random_uniform(UInt32(2)))
+        let random = Int(arc4random_uniform(UInt32(6)))
         return random
     }
     
