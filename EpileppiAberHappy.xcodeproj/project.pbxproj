@@ -42,14 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5460E3BB1E5A699200BA8CC9 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		549C11B71E5607F40076EA48 /* SingleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleViewController.swift; sourceTree = "<group>"; };
+		5460E3BB1E5A699200BA8CC9 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
+		549C11B71E5607F40076EA48 /* SingleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SingleViewController.swift; path = ../SingleViewController.swift; sourceTree = "<group>"; };
 		549C11BC1E5619FD0076EA48 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		549C11BE1E561C930076EA48 /* Tetris_Dubstep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Tetris_Dubstep.wav; sourceTree = "<group>"; };
 		549C11BF1E561C930076EA48 /* Tetris_-_Tetris.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Tetris_-_Tetris.wav"; sourceTree = "<group>"; };
 		549C11E01E5673600076EA48 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		54CC1B3A1E54CCE900CB83A2 /* EightModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EightModeViewController.swift; sourceTree = "<group>"; };
-		54CC1B3C1E55182800CB83A2 /* DoubleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleViewController.swift; sourceTree = "<group>"; };
+		54CC1B3C1E55182800CB83A2 /* DoubleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoubleViewController.swift; path = ../DoubleViewController.swift; sourceTree = "<group>"; };
 		F76FCB691E4FE83C00A014F0 /* EpileppiAberHappy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EpileppiAberHappy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F76FCB6C1E4FE83C00A014F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F76FCB6E1E4FE83C00A014F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,9 +119,6 @@
 		F76FCB601E4FE83C00A014F0 = {
 			isa = PBXGroup;
 			children = (
-				5460E3BB1E5A699200BA8CC9 /* SettingsViewController.swift */,
-				549C11B71E5607F40076EA48 /* SingleViewController.swift */,
-				54CC1B3C1E55182800CB83A2 /* DoubleViewController.swift */,
 				F76FCB6B1E4FE83C00A014F0 /* EpileppiAberHappy */,
 				F76FCB801E4FE83C00A014F0 /* EpileppiAberHappyTests */,
 				F76FCB8B1E4FE83C00A014F0 /* EpileppiAberHappyUITests */,
@@ -143,6 +140,9 @@
 		F76FCB6B1E4FE83C00A014F0 /* EpileppiAberHappy */ = {
 			isa = PBXGroup;
 			children = (
+				54CC1B3C1E55182800CB83A2 /* DoubleViewController.swift */,
+				549C11B71E5607F40076EA48 /* SingleViewController.swift */,
+				5460E3BB1E5A699200BA8CC9 /* SettingsViewController.swift */,
 				F76FCB6C1E4FE83C00A014F0 /* AppDelegate.swift */,
 				F76FCB6E1E4FE83C00A014F0 /* ViewController.swift */,
 				549C11E01E5673600076EA48 /* QuestionViewController.swift */,
