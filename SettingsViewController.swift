@@ -12,6 +12,16 @@ import AVFoundation
 var player:AVAudioPlayer = AVAudioPlayer()
 var musicOn = false
 var musicCode = 0
+var audioPath = ""
+
+func setAudioPath(songPath: String) {
+    do {
+        audioPath = Bundle.main.path(forResource: songPath, ofType: "wav")!
+        try player = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath) as URL)
+    } catch {
+        NSLog("ERROR: Error with Tetris_Dubstep-AudioFILE!")
+    }
+}
 
 func setMusic(state: Int) {
     if (state == 0) {
@@ -56,6 +66,21 @@ class SettingsViewController: UIViewController {
 
     }
     
+    //Buttons für Liederwahl:
+    @IBOutlet weak var song1: UIButton!
+    @IBOutlet weak var song2: UIButton!
+    @IBOutlet weak var song3: UIButton!
+    
+    //Was bei Button1 Passiert:
+    @IBAction func useTetrisNormal(_ sender: Any) {
+        setAudioPath(songPath: "Tetris")
+    }
+    
+    @IBAction func useTetrisDubstep(_ sender: Any) {
+        setAudioPath(songPath: "Tetris_Dubstep")
+    }
+    
+    
     
     func checkForMusic() {
         if (musicOn == true) {
@@ -64,12 +89,7 @@ class SettingsViewController: UIViewController {
             setMusic(state: 1)
         } else if ((musicOn == false)) {
             switchButton.setOn(false, animated:true)
-            do {
-                let audioPath = Bundle.main.path(forResource: "Tetris_Dubstep", ofType: "wav")
-                try player = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
-            } catch {
-                NSLog("ERROR: Error with Tetris_Dubstep-AudioFILE!")
-            }
+           
             
             setMusic(state: 0)
         }

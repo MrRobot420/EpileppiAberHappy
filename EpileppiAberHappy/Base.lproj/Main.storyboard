@@ -594,42 +594,30 @@
                                 <color key="textColor" red="0.96441847085952759" green="0.84332126379013062" blue="0.19431746006011963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="euZ-WP-fcs">
-                                <rect key="frame" x="103" y="242" width="113" height="23"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74o-gN-nFl">
+                                <rect key="frame" x="109" y="191" width="101" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74o-gN-nFl">
-                                        <rect key="frame" x="10" y="-4" width="92" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Tetris Normal"/>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.97839937096736951" green="1" blue="0.2070855084604607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Upv-Ah-GCX">
-                                <rect key="frame" x="104" y="273" width="113" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43q-IM-2Xb">
-                                        <rect key="frame" x="6" y="-4" width="101" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Tetris Dubstep"/>
-                                    </button>
-                                </subviews>
                                 <color key="backgroundColor" red="0.97006732225418091" green="0.9681209921836853" blue="0.20847606658935547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2sh-Zr-S3y">
-                                <rect key="frame" x="104" y="304" width="113" height="23"/>
+                                <state key="normal" title="Tetris Normal"/>
+                                <connections>
+                                    <action selector="useTetrisNormal:" destination="jwM-BH-KkS" eventType="touchUpInside" id="cQH-Ul-XVT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43q-IM-2Xb">
+                                <rect key="frame" x="109" y="229" width="101" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oiw-Lb-Fkj">
-                                        <rect key="frame" x="21" y="-4" width="70" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="New Song"/>
-                                    </button>
-                                </subviews>
                                 <color key="backgroundColor" red="0.97006732225418091" green="0.9681209921836853" blue="0.20847606658935547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
+                                <state key="normal" title="Tetris Dubstep"/>
+                                <connections>
+                                    <action selector="useTetrisDubstep:" destination="jwM-BH-KkS" eventType="touchUpInside" id="9jI-hG-nhQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oiw-Lb-Fkj">
+                                <rect key="frame" x="109" y="267" width="101" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97006732225418091" green="0.9681209921836853" blue="0.20847606658935547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="New Song"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.060337064081990834" green="0.667381526919826" blue="0.92610508419689119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -638,6 +626,9 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="song1" destination="74o-gN-nFl" id="Z3n-Rb-be0"/>
+                        <outlet property="song2" destination="43q-IM-2Xb" id="Jak-Fh-dWs"/>
+                        <outlet property="song3" destination="Oiw-Lb-Fkj" id="6Dr-xd-aTc"/>
                         <outlet property="switchButton" destination="JHe-Gp-nFq" id="0vw-64-oaE"/>
                     </connections>
                 </viewController>
