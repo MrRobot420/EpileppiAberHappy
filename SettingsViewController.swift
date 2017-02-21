@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-var player:AVAudioPlayer = AVAudioPlayer()
+var player: AVAudioPlayer = AVAudioPlayer()
 var musicOn = false
 var musicCode = 0
 var audioPath = Bundle.main.path(forResource: "Tetris_Dubstep", ofType: "wav")!
@@ -88,6 +88,7 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var song3: UIButton!
     @IBOutlet weak var song4: UIButton!
     @IBOutlet weak var song5: UIButton!
+    @IBOutlet weak var song6: UIButton!
     
     //Was bei Button1 Passiert:
     @IBAction func useTetrisNormal(_ sender: Any) {
@@ -114,6 +115,12 @@ class SettingsViewController: UIViewController {
         setAudioPath(songPath: "Eyes_On_Fire")
         if (musicOn == true) {player.stop() ; player.play()}
     }
+    
+    @IBAction func useWhereIsMyMind(_ sender: Any) {
+        setAudioPath(songPath: "Where_Is_My_Mind")
+        if (musicOn == true) {player.stop() ; player.play()}
+    }
+    
     
     
    

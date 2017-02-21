@@ -3,10 +3,14 @@
 //  EpileppiAberHappy
 //
 //  Created by Maximilian Karl on 16.02.17.
-//  Copyright © 2017 Johannes Velde. All rights reserved.
+//  Copyright © 2017 MrRobot. All rights reserved.
 //
 
 import UIKit
+import AVFoundation
+
+var help = 0
+var clickCount = "Tap 2 C"
 
 class DoubleViewController: UIViewController {
     
@@ -19,14 +23,42 @@ class DoubleViewController: UIViewController {
     }
     
     @IBAction func pressButton(_ sender: Any) {
+        var randomColor : UIColor
+        randomColor = getRandomColor()
+        var randomColor2 : UIColor
+        randomColor2 = getRandomColor()
+        
+        countClicks()
+        clickCount = "\(help)"
+        clicks.text = "\(clickCount)"
+        
+        //Views ColorChange
         topView.backgroundColor = getRandomColor()
+        midView.backgroundColor = getRandomColor()
         bottomView.backgroundColor = getRandomColor()
+        
+        //Button ColorChange
+        ChangeColor.setTitleColor(randomColor, for: .normal)
+        
+        //Counter ColorChange
+        counter.textColor = randomColor2
+        
+        //Clicks ColorChange
+        clicks.textColor = randomColor2
+      
+        
+        
     }
-   
+    
+    func countClicks() {
+        help += 1
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        clickCount = "Tap 2 C"
+        clicks.text = "\(clickCount)"
+        //Wenn man neu rein kommt auf Null setzen ??
         // Do any additional setup after loading the view.
     }
 
@@ -35,10 +67,13 @@ class DoubleViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //Some Variables
     @IBOutlet weak var ChangeColor: UIButton!
     @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var midView: UIView!
+    @IBOutlet weak var counter: UILabel!
+    @IBOutlet weak var clicks: UILabel!
   
     @IBOutlet var swipeReconginzer: UISwipeGestureRecognizer!
     

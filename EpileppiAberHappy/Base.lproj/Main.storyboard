@@ -499,6 +499,15 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ST-pL-bjh">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="275"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Counter: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLA-tz-7hp">
+                                        <rect key="frame" x="97" y="224" width="127" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.4992716908454895" green="0.94819861650466919" blue="0.1383189857006073" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="1gZ-WX-Rvg"/>
@@ -507,12 +516,22 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Djp-Bi-eYX">
                                 <rect key="frame" x="0.0" y="293" width="320" height="275"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lP-p7-uwB">
+                                        <rect key="frame" x="90" y="8" width="127" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.1980459665868462" green="0.97570127250000005" blue="0.093070367138296833" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKF-8o-FRH">
                                 <rect key="frame" x="16" y="20" width="288" height="528"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Press">
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="PRESS">
                                     <color key="titleColor" red="0.4992716908454895" green="0.94819861650466919" blue="0.1383189857006073" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -542,6 +561,8 @@
                         <outlet property="ChangeColor" destination="NKF-8o-FRH" id="kds-ga-N0g"/>
                         <outlet property="bottomView" destination="Djp-Bi-eYX" id="cht-6b-cDN"/>
                         <outlet property="changeColor" destination="NKF-8o-FRH" id="wd1-XZ-yPN"/>
+                        <outlet property="clicks" destination="7lP-p7-uwB" id="3Y1-uz-84W"/>
+                        <outlet property="counter" destination="dLA-tz-7hp" id="a9z-Eu-9VD"/>
                         <outlet property="midView" destination="4vs-Ln-u1M" id="06x-bb-6ER"/>
                         <outlet property="topView" destination="3ST-pL-bjh" id="mzi-G5-KGE"/>
                     </connections>
@@ -553,7 +574,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-318.75" y="1098.5915492957747"/>
+            <point key="canvasLocation" x="-298.125" y="1097.5352112676057"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="goS-3r-CsO">
@@ -640,6 +661,16 @@
                                 <color key="textColor" red="0.96441847085952759" green="0.84332126379013062" blue="0.19431746006011963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPP-rt-yTe">
+                                <rect key="frame" x="74" y="381" width="171" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97006732230000003" green="0.96812099220000003" blue="0.20847606660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Where Is My Mind?"/>
+                                <connections>
+                                    <action selector="useEyesOnFire:" destination="jwM-BH-KkS" eventType="touchUpInside" id="Ol8-14-VAe"/>
+                                    <action selector="useWhereIsMyMind:" destination="jwM-BH-KkS" eventType="touchUpInside" id="VU6-mA-Yfh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.060337064081990834" green="0.667381526919826" blue="0.92610508419689119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -653,6 +684,7 @@
                         <outlet property="song3" destination="Oiw-Lb-Fkj" id="6Dr-xd-aTc"/>
                         <outlet property="song4" destination="TT4-rY-qGQ" id="TJd-qj-5Xo"/>
                         <outlet property="song5" destination="Arf-y4-QeU" id="V91-l1-VvJ"/>
+                        <outlet property="song6" destination="kPP-rt-yTe" id="S5m-bb-h4h"/>
                         <outlet property="switchButton" destination="JHe-Gp-nFq" id="0vw-64-oaE"/>
                     </connections>
                 </viewController>
@@ -861,6 +893,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Bys-kw-mIV"/>
+        <segue reference="PPQ-iH-Xhr"/>
     </inferredMetricsTieBreakers>
 </document>

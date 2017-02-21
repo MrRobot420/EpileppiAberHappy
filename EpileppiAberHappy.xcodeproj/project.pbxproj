@@ -11,6 +11,7 @@
 		5460E3C01E5B14F000BA8CC9 /* I_Cant_Stop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5460E3BD1E5B14F000BA8CC9 /* I_Cant_Stop.wav */; };
 		5460E3C11E5B14F000BA8CC9 /* Eyes_On_Fire.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5460E3BE1E5B14F000BA8CC9 /* Eyes_On_Fire.wav */; };
 		5460E3C21E5B14F000BA8CC9 /* Color_Therapy.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5460E3BF1E5B14F000BA8CC9 /* Color_Therapy.wav */; };
+		5461F79C1E5CFD3600B1FC33 /* Where_Is_My_Mind.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5461F79B1E5CFD3600B1FC33 /* Where_Is_My_Mind.wav */; };
 		549C11B81E5607F40076EA48 /* SingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549C11B71E5607F40076EA48 /* SingleViewController.swift */; };
 		549C11BD1E5619FD0076EA48 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 549C11BC1E5619FD0076EA48 /* AVFoundation.framework */; };
 		549C11C01E561C930076EA48 /* Tetris_Dubstep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 549C11BE1E561C930076EA48 /* Tetris_Dubstep.wav */; };
@@ -49,6 +50,7 @@
 		5460E3BD1E5B14F000BA8CC9 /* I_Cant_Stop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = I_Cant_Stop.wav; sourceTree = "<group>"; };
 		5460E3BE1E5B14F000BA8CC9 /* Eyes_On_Fire.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Eyes_On_Fire.wav; sourceTree = "<group>"; };
 		5460E3BF1E5B14F000BA8CC9 /* Color_Therapy.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Color_Therapy.wav; sourceTree = "<group>"; };
+		5461F79B1E5CFD3600B1FC33 /* Where_Is_My_Mind.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Where_Is_My_Mind.wav; sourceTree = "<group>"; };
 		549C11B71E5607F40076EA48 /* SingleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SingleViewController.swift; path = ../SingleViewController.swift; sourceTree = "<group>"; };
 		549C11BC1E5619FD0076EA48 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		549C11BE1E561C930076EA48 /* Tetris_Dubstep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Tetris_Dubstep.wav; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				549C11BE1E561C930076EA48 /* Tetris_Dubstep.wav */,
+				5461F79B1E5CFD3600B1FC33 /* Where_Is_My_Mind.wav */,
 				549C11BF1E561C930076EA48 /* Tetris.wav */,
 				5460E3BD1E5B14F000BA8CC9 /* I_Cant_Stop.wav */,
 				5460E3BE1E5B14F000BA8CC9 /* Eyes_On_Fire.wav */,
@@ -300,6 +303,7 @@
 				F76FCB721E4FE83C00A014F0 /* Main.storyboard in Resources */,
 				549C11C11E561C930076EA48 /* Tetris.wav in Resources */,
 				5460E3C01E5B14F000BA8CC9 /* I_Cant_Stop.wav in Resources */,
+				5461F79C1E5CFD3600B1FC33 /* Where_Is_My_Mind.wav in Resources */,
 				5460E3C21E5B14F000BA8CC9 /* Color_Therapy.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,7 +490,7 @@
 				DEVELOPMENT_TEAM = S6KJ7JN9XX;
 				INFOPLIST_FILE = EpileppiAberHappy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.MrRobot420.epilepsy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MrRobot420.epilepsy1.01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -499,7 +503,7 @@
 				DEVELOPMENT_TEAM = S6KJ7JN9XX;
 				INFOPLIST_FILE = EpileppiAberHappy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.MrRobot420.epilepsy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MrRobot420.epilepsy1.01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
